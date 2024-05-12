@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat','Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  height:100%;
+  -moz-osx-font-smoothing: grayscale;
+  @apply flex flex-col items-center;
+}
+
+#root{
+  @apply w-full;
+  /* @apply w-full max-w-screen-2xl; */
+}
+
+.body-wrapper{
+  min-height: calc(100vh - 10rem);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input{
+  @apply p-4 outline-none border border-gray-300 my-1;
+}
+

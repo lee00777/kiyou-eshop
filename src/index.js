@@ -54,7 +54,7 @@ const router = createBrowserRouter([
                         <MyCart />
                     </ProtectedRoute>
                 ),
-                errorElement: <NotFound />,
+                // errorElement: <NotFound />,
             },
             {
                 path: "/best",
@@ -107,7 +107,7 @@ const router = createBrowserRouter([
                 errorElement: <NotFound />,
             },
         ],
-        errorElement: <NotFound />,
+        // errorElement: <NotFound />,
     },
 ]);
 

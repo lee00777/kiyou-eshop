@@ -6,7 +6,7 @@ import colorMatch from '../utils/color';
 export default function ProductCard({product, product: {id, image, title, category, price}}) {
   const navigate = useNavigate();
   return (
-    <li onClick={()=>{navigate(`/products/${id}`, {state:{product}})}} className='rounded-lg mt-5 shadow-md overflow-hidden cursor-pointer transition-all hover:scale-105'>
+    <li key={id} onClick={()=>{navigate(`/products/${id}`, {state:{product}})}} className='rounded-lg mt-5 shadow-md overflow-hidden cursor-pointer transition-all hover:scale-105'>
       <img className="w-full" src={image.product[0]} alt={title}/>
         <div className='mt-2 px-2 text-lg flex justify-between items-center border-b border-gray-300 pb-2 '>
             <h3 className='truncate'>{title}</h3> {/* width를 넘어가면 ...으로 만들어버린다!! */}
@@ -15,7 +15,7 @@ export default function ProductCard({product, product: {id, image, title, catego
         <div>
           <div className='flex mt-3 ml-1 mb-2'>
             {product.trend.map(tag =>
-              <p className='w-auto  px-2 flex items-center mr-2 rounded-lg bg-brand text-sm text-white '>{tag}</p>
+              <p key={tag} className='w-auto  px-2 flex items-center mr-2 rounded-lg bg-brand text-sm text-white '>{tag}</p>
             )}
           </div>
           <div className='flex ml-2'>

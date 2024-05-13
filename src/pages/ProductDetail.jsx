@@ -122,7 +122,7 @@ export default function ProductDetail() {
               shouldResetAutoplay
               >
               {image.product.map((item, idx)=>{
-                  return <img className='m-2 pr-4 h-full object-contain my-auto' onError={(ev)=>errorHandling(ev)} src={item} alt="extra pic" onClick={()=>handleExtraImage(idx)} />
+                  return <img className='m-2 pr-4 h-full object-contain my-auto' key={idx} onError={(ev)=>errorHandling(ev)} src={item} alt="extra pic" onClick={()=>handleExtraImage(idx)} />
               })}
           </Carousel>
         </div>
@@ -137,7 +137,7 @@ export default function ProductDetail() {
           <p className='py-4 text-lg'>{description}</p>
           <div className='flex mb-2'>
             {trend.map(tag =>
-              <p className='w-auto px-3 py-1 flex items-center mr-2 rounded-lg bg-trendbtn text-sm text-trendbtnfont font-semibold'>{tag}</p>
+              <p key={tag} className='w-auto px-3 py-1 flex items-center mr-2 rounded-lg bg-trendbtn text-sm text-trendbtnfont font-semibold'>{tag}</p>
             )}
           </div>
           {/* 옵션 */}
@@ -146,7 +146,7 @@ export default function ProductDetail() {
               <span className='text-black ml-3 font-normal'>{selectedColor}</span>
             </p>
             <div className='w-full mt-5 flex ml-5 justify-start flex-wrap'>
-              {image && image.options.map((option, idx)=> <img className="w-20 mr-2 cursor-pointer" src={option} alt="color option" onClick={()=>{handleOption(idx)}}/>)}
+              {image && image.options.map((option, idx)=> <img className="w-20 mr-2 cursor-pointer" key={idx} src={option} alt="color option" onClick={()=>{handleOption(idx)}}/>)}
             </div>
           </div>
           {/* 사이즈 */}

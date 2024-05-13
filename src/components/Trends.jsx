@@ -65,7 +65,7 @@ export default function Trends() {
           rtl={false}
           shouldResetAutoplay>
           {mock.map((item)=>{
-              return <TrendCard image={item.image} description={item.description}/>
+              return <TrendCard key={item.id} image={item.image} description={item.description}/>
             })}
         </Carousel>
       </section>

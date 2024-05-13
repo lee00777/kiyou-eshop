@@ -53,9 +53,9 @@ export async function addNewProduct(product, imageUrl) {
         price: parseInt(product.price), // form에서 string으로 받았으니까 number로 바꿔주기
         image: imageUrl,
         size: product.size.split(","),
-        trends: product.trends.split(","),
+        trend: product.trend.split(","),
         colors: product.colors.split(","),
-        categories: product.categories.split(","),
+        category: product.category.split(","),
     });
 }
 

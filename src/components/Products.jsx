@@ -11,7 +11,7 @@ export default function Products({category}) {
     <>
       {isPending && <div className='flex justify-center mt-60'><RiLoaderLine className="animate-loading w-20 h-20 mt-10 text-brand" /></div>}
       { error && <p>{error}</p>}
-      <ul className=' max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-12 mt-24 my-28'>
+      <ul className='body-wrapper max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-12 mt-24 my-12  h-auto'>
         {}
         {category.length === 0 && products && products.map(product => <ProductCard key={product.id} product={product}/>)}
         {category.length >=1 && products && products

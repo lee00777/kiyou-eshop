@@ -20,7 +20,8 @@ export default function NewProduct() {
       return;
     }
     if(name === "optionFile"){
-      setOptionFile(files && [...files])
+      setOptionFile(files && [...files]);
+      return;
     }
     setProduct((product)=> ({...product, [name]: value}))
   }
@@ -65,22 +66,23 @@ export default function NewProduct() {
   }
 
   return (
-    <section className='w-full text-center body-wrapper mt-28'>
+    <section className='w-full text-center body-wrapper mt-28 my-12'>
       <h2 className='text-2xl font-semibold mt-36 mb-12 text-brand'>Product Registration</h2>
       {success && <p className='my-s'>✅{success}</p> }
       { file && <img className="w-96 mx-auto mb-2" src={URL.createObjectURL(file[0])} alt='local file'/>}
         <form onSubmit={handleSubmit} className='flex flex-col px-12'>
-          <label htmlFor="file" className='text-left'>Product Images</label>
+          <label htmlFor="file" className='text-left font-semibold text-description'>Product Images</label>
           <input type="file" accept='image/*' name="file" multiple required onChange={handleChange} />  
+          <label htmlFor="optionFile" className='text-left font-semibold text-description mt-2'>Option Images</label>
+          <input type="file" accept='image/*' name="optionFile" multiple required onChange={handleChange} />  
+          <h4 className='text-left mt-2 font-semibold text-description'> Product information </h4>
           <input type="text" name="title" value={product.title?? ''} placeholder='Product Name' required onChange={handleChange}/>
           <input type="number" name="price" value={product.price ?? ''} placeholder='Price' required onChange={handleChange}/>
-          <input type="text" name="categories" value={product.categories ?? ''} placeholder='Categories' required onChange={handleChange}/>
+          <input type="text" name="category" value={product.category ?? ''} placeholder='Categories' required onChange={handleChange}/>
           <input type="text" name="description" value={product.description ?? ''} placeholder='Description' required onChange={handleChange}/>
           <input type="text" name="size" value={product.size ?? ''} placeholder='Size (Separated by comma (,))' required onChange={handleChange} />
-          <input type="text" name="trends" value={product.trends ?? ''} placeholder='Trends (Separated by comma (,))' required onChange={handleChange} />
+          <input type="text" name="trend" value={product.trend ?? ''} placeholder='Trends (Separated by comma (,))' required onChange={handleChange} />
           <input type="text" name="colors" value={product.colors ?? ''} placeholder='Colors (Separated by comma (,))' required onChange={handleChange} />        
-          <label htmlFor="optionFile" className='text-left'>Option Images</label>
-          <input type="file" accept='image/*' name="optionFile" multiple required onChange={handleChange} />  
           <button  className="w-full bg-brand py-2 mt-5 px-4 text-white rounded-sm hover:brightness-110" disabled={isUploading} >
           { isUploading? 'Uploading...' : 'Add Products'}
           </button>

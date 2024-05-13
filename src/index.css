@@ -33,3 +33,6 @@ input{
   @apply p-4 outline-none border border-gray-300 my-1;
 }
 
+.test{
+  max-height:60vh;
+}

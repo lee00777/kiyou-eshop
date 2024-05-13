@@ -4,9 +4,9 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 let mock = [
-  {image:"/images/best.jpeg", description:"BEST❣️"},{image:"/images/new.jpeg", description:"NEW🌿"},
-  {image:"/images/hotsales.jpeg", description:"HOT SALES🔥"},{image:"/images/summer.jpeg", description:"SUMMER☀️"},
-  {image:"/images/vacation.jpeg", description:"VACATION ⛱️"}
+  {image:"/images/best.jpeg",trends:"/best", description:"BEST❣️"},{image:"/images/new.jpeg",trends:"/new", description:"NEW🌿"},
+  {image:"/images/hotsales.jpeg",trends:"/sales", description:"HOT SALES🔥"},{image:"/images/summer.jpeg", trends:"/products/accessories",description:"SUMMER☀️"},
+  {image:"/images/vacation.jpeg", trends:"/products/dresses",description:"VACATION ⛱️"}
 ];
 const responsive = {
   desktop: {
@@ -65,7 +65,7 @@ export default function Trends() {
           rtl={false}
           shouldResetAutoplay>
           {mock.map((item)=>{
-              return <TrendCard key={item.id} image={item.image} description={item.description}/>
+              return <TrendCard key={item.id} image={item.image} trends={item.trends} description={item.description}/>
             })}
         </Carousel>
       </section>

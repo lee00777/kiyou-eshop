@@ -18,19 +18,21 @@ export default function CartItem({product, product: {id, image, title, option, q
   const handleDelete = () =>removeItem.mutate(id);
 
   return (
-    <li className='flex justify-between my-2 items-center p-10 border rounded-lg border-gray-200 shadow-lg '>
+    <li className='flex justify-between my-4 items-center p-10 border rounded-lg bg-white border-gray-200 shadow-lg '>
       <img className="w-24 md:w-48 rounded-lg " src={image.product[0]} alt={title}/>
       <div className='flex-1 flex justify-between ml-4'>
         {/* <div className='flex basis-4/5 justify-between items-center text-sm md:text-base '> */}
         <div className='grid grid-cols-1 md:flex basis-4/5 justify-between items-center text-sm md:text-base '>
           <div className='basis-1/3'>
-            <p className='text-lg text-brand font-bold'>{title}</p>
+            <p className='text md lg:text-lg text-brand font-bold'>{title}</p>
             <p className='text-md '>{product.description}</p>
+            <p className='border-b border-gray-400 my-1 w-full md:invisible'></p>
           </div>
           <div className='text-left md:text-center basis-1/3 text-sm md:text-base '>
-            <h3 className='hidden md:block mb-2 text-sm md:text-base'>[Options] </h3>
+            {/* <h3 className='hidden md:block mb-2 text-sm md:text-base'>Options </h3> */}
             <p className='text-md'><b>Size:</b> {option.selectedSize}</p>
             <p className='text-md'><b>Color:</b> {option.selectedColor}</p>
+            <p className='border-b border-gray-400 my-1 w-full md:invisible'></p>
           </div>
           <div className='basis-1/3 text-left md:text-center'>
             <p className='text-sm md:text-lg'>${price}</p>

@@ -14,7 +14,6 @@ export default function NewProduct() {
 
   const handleChange = (ev)=>{
     const { name, value, files } = ev.target;
-    console.log('효로로로롤', files)
     if(name === "file"){
       setFile(files && [...files]); // if(files){setFile(files[0])}의 의미임
       return;
@@ -26,10 +25,11 @@ export default function NewProduct() {
     setProduct((product)=> ({...product, [name]: value}))
   }
   const removeFileImage = () =>{
-    const fileInput= document.querySelector('input[type="file"]');
-    fileInput.value='';
+    const fileInputs= document.querySelectorAll('input[type="file"]');
+    fileInputs.forEach(input=>{
+      input.value='';
+    })
   }
-
   async function handleSubmit(ev){
     ev.preventDefault();
     setIsUploading(true);
@@ -49,7 +49,6 @@ export default function NewProduct() {
         product: ProductUrls,
         options: optionUrls
       }
-      console.log('어이어이:', urls)
       addProduct.mutate({product,urls}, {onSuccess: ()=>{ //[2] Firebase에 새로운 제품을 추가함
         setSuccess('Item is registered successfully!');
         setTimeout(()=>{
@@ -58,13 +57,14 @@ export default function NewProduct() {
       }})
       setProduct({})
       setFile();
+      setOptionFile();
       removeFileImage();       // 파일은 value attribute이 불가능하므로, js에 불러와서 value를 clear해줘야함
       setIsUploading(false)
     }catch(err){
       console.error('Error happened:', err)
     }
   }
-
+  
   return (
     <section className='w-full text-center body-wrapper mt-28 my-12'>
       <h2 className='text-2xl font-semibold mt-36 mb-12 text-brand'>Product Registration</h2>

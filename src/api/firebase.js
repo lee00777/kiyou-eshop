@@ -44,18 +44,18 @@ async function adminUser(user) {
 }
 
 export async function addNewProduct(product, imageUrl) {
-    console.log("짱구야아아:", imageUrl);
     const id = uuid(); // 고유 id만들어주기
+
     return set(ref(database, `products/${id}`), {
         // set은 firebase에 post할때 쓰는 함수임. // 즉, database에 proudcts라는 일종의 새로운 json파일을 만들어주고=> 그안에, id로 key값 저장하고 아래의 애들 value로 저장해라
         ...product,
         id,
         price: parseInt(product.price), // form에서 string으로 받았으니까 number로 바꿔주기
         image: imageUrl,
-        size: product.size.split(","),
-        trend: product.trend.split(","),
-        colors: product.colors.split(","),
-        category: product.category.split(","),
+        size: product.size.split(",").map((item) => item.trim()),
+        trend: product.trend.split(",").map((item) => item.trim()),
+        colors: product.colors.split(",").map((color) => color.trim()),
+        category: product.category.split(",").map((item) => item.trim()),
     });
 }
 

@@ -35,6 +35,7 @@ export default function ProductDetail() {
   const {state:{
     product:{id, image,title,description, size, trend, colors, category, price}
   }} = useLocation();
+
   const [ selectedSize, setSelectedSize ] = useState(size && size[0]);
   const [ selectedColor, setSelectedColor] = useState(colors && colors[0]);
   const [ selectedOptionIdx, setSelectedOptionIdx ] = useState(0);
@@ -50,7 +51,8 @@ export default function ProductDetail() {
     }else{
       // 장바구니에 추가하기
       const product ={
-        id, image, title, price, description, option: {selectedSize, selectedColor}, quantity:1
+        id, image, title, price, description, option: {selectedSize, selectedColor}, quantity:1,
+        original:{id, image,title,description, size, trend, colors, category, price}
       }
       addOrUpdateItem.mutate(product, {
         onSuccess: ()=>{

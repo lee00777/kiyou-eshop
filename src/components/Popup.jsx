@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Popup({child}) {
+  console.log('불렸어요', child)
   return (
     <div className='w-screen h-screen fixed top-0 left-0 popup'>
       <div className='inset-0 w-full h-full bg-black opacity-90'></div>

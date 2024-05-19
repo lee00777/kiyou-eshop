@@ -8,6 +8,7 @@ import useCart from '../hooks/useCart';
 import { LiaCartPlusSolid } from "react-icons/lia";
 import { BsCartPlus } from "react-icons/bs";
 import { RiLoaderLine } from "react-icons/ri";
+import Popup from '../components/Popup';
 const SHIPPING = 30;
 
 export default function MyCart() {
@@ -17,6 +18,20 @@ export default function MyCart() {
 
   const hasProducts = products && products.length >0;
   const totalPrice = products && products.reduce((prev,current) => prev + parseInt(current.price) * current.quantity, 0);
+
+  const handleOrder = () =>{
+    console.log('클릭!')
+    return <Popup child={
+      <div className='w-full  h-full flex flex-col justify-center items-center'>
+        <p className='w-5/6 text-center mx-auto text-lg -mb-3 text-black-400'> <span className=' border-b-8 border-[#ffe7e2]'>Your order </span>will be shipped soon!</p>
+
+      <div className='w-5/6 mt-16 text-center'>
+        <button className='w-full sm:w-auto h-auto p-3 rounded-lg border border-gray-400 text-gray hover:brightness-110' >Close</button> 
+      </div>
+    </div>
+    }/>
+  }
+
 
   return (
     <section className='p-16 flex flex-col body-wrapper bg-background'>
@@ -41,7 +56,7 @@ export default function MyCart() {
           <FaEquals className='shrink-0'/>
           <PriceCard text="Total Price" price={SHIPPING + totalPrice}/>
         </div>
-        <Button className="mx-5" text="Order"/>
+        <button className="w-5/6 mt-5 mx-auto bg-brand text-white hover:brightness-110" onClick={handleOrder}>ORDER</button>
       </>}
     </section>
   );

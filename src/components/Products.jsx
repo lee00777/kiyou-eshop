@@ -52,21 +52,45 @@ export default function Products({category}) {
         {console.log("category:", category, category.length)}
         { category.length === 0 && products && products.map(product => <ProductCard key={product.id} product={product}/>)}
         {/* skirts, dresses, pants처럼 특정카테고리 클릭하면 보여주기 */}
-        {category && category.length >=1 && products && clickedFilter === 'All' && 
+        {/* {category && category.length >=1 && products && clickedFilter === 'All' && 
           products
             .filter(item => item.category.includes(category))
             .map(item => (
               <ProductCard key={item.id} product={item} />
             ))
-        }
-        {category && category.length >=1 && products && filterFlag && 
+        } */}
+        {/* {category && category.length >=1 && products && filterFlag && 
           products
             .filter(item => item.category.includes(category))
             .filter(item => item.category.includes(clickedFilter))
-            .map(item => (
-              <ProductCard key={item.id} product={item} />
-            ))
-        }
+            .map(item=>{
+              return   <ProductCard key={item.id} product={item} />
+            })
+        } */}
+          {category && category.length >= 1 && products && (
+            clickedFilter === 'All' ?
+              products
+                .filter(item => item.category.includes(category))
+                .map(item => (
+                  <ProductCard key={item.id} product={item} />
+                ))
+            :
+              filterFlag &&
+              (() => {
+                let filteredProducts = products
+                  .filter(item => item.category.includes(category))
+                  .filter(item => item.category.includes(clickedFilter));
+
+                if (filteredProducts.length === 0) {
+                  return <p>no items in the selected filter</p>;
+                } else {
+                  return filteredProducts.map(item => (
+                    <ProductCard key={item.id} product={item} />
+                  ));
+                }
+              })()
+          )}
+
 
       </ul>
     </div>

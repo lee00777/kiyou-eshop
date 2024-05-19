@@ -34,7 +34,7 @@ export default function MyCart() {
             return <CartItem key={product.id} product={product} />
           })}
         </ul>
-        <div className='flex flex-col md:flex-row px-8 bg-brand w-full justify-evenly items-center mb-6'>
+        <div className='flex flex-col md:flex-row px-8 w-full justify-evenly items-center mb-6'>
           <PriceCard text="Product Price" price={totalPrice}/>
           <BsFillPlusCircleFill className='shrink-0'/>
           <PriceCard text="Delivery fee" price={SHIPPING}/>

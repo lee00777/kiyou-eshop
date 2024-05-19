@@ -5,7 +5,7 @@ import colorMatch from '../utils/color';
 
 export default function ProductCard({product, product: {id, image, title, category, price, }}) {
   const navigate = useNavigate();
- console.log('나야나 :', product)
+
   return (
     <li key={id} onClick={()=>{navigate(`/products/${id}`, {state:{product}})}} className='rounded-lg h-fit shadow-md overflow-hidden cursor-pointer transition-all hover:scale-105'>
       <img className="w-full" src={image.product[0]} alt={title}/>

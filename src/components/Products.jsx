@@ -80,9 +80,8 @@ export default function Products({category}) {
                 let filteredProducts = products
                   .filter(item => item.category.includes(category))
                   .filter(item => item.category.includes(clickedFilter));
-
                 if (filteredProducts.length === 0) {
-                  return <p>no items in the selected filter</p>;
+                  return  <p className='col-start-2 col-span-2 mt-10 text-center text-lg text-description'>🚫 No items match the selected filter </p>
                 } else {
                   return filteredProducts.map(item => (
                     <ProductCard key={item.id} product={item} />
@@ -90,8 +89,6 @@ export default function Products({category}) {
                 }
               })()
           )}
-
-
       </ul>
     </div>
   );

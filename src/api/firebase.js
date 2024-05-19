@@ -75,6 +75,13 @@ export async function getCart(userId) {
         });
 }
 
+export async function getFilters(filter) {
+    return get(ref(database, `filters/${filter}`)).then((snapshot) => {
+        const items = snapshot.val() || {};
+        return Object.values(items);
+    });
+}
+
 export async function addOrUpdateToCart(userId, product) {
     return set(ref(database, `carts/${userId}/${product.id}`), product);
 }

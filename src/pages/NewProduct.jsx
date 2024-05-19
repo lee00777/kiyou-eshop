@@ -2,13 +2,15 @@ import React from 'react';
 import { useState } from 'react';
 import { uploadImage } from '../api/uploader';
 import useProducts from '../hooks/useProducts';
+import Popup from '../components/Popup';
+import { useEffect } from 'react';
 
 export default function NewProduct() {
   const [ product, setProduct ] = useState({});            // 사용자 input을 받아와서 database에 저장하기 위해 임시로 사용되는 변수
   const [ file, setFile] = useState();                     // 사용자 input 중 file이미지를 받아와서 database에 저장하기 위해 임시로 사용되는 변수 (product에 별도로 하는 이유는, 파일은 cloudinary라는 db에 저장하고 그걸 firebase에 다시 넣기 위함임)
   const [ optionFile, setOptionFile] = useState();                     // 사용자 input 중 file이미지를 받아와서 database에 저장하기 위해 임시로 사용되는 변수 (product에 별도로 하는 이유는, 파일은 cloudinary라는 db에 저장하고 그걸 firebase에 다시 넣기 위함임)
   const [ isUploading, setIsUploading ] = useState(false); // better UX위해, 현재 업로드 중이라는거 알려주는 용도
-  const [ success, setSuccess ] = useState();              // better UX위해, 성공적으로 업로드 되었다는거 알려주는 용도
+  const [ success, setSuccess ] = useState(false);              // better UX위해, 성공적으로 업로드 되었다는거 알려주는 용도
 
   const { addProduct} = useProducts(); //[3] 최근방식
 
@@ -50,10 +52,7 @@ export default function NewProduct() {
         options: optionUrls
       }
       addProduct.mutate({product,urls}, {onSuccess: ()=>{ //[2] Firebase에 새로운 제품을 추가함
-        setSuccess('Item is registered successfully!');
-        setTimeout(()=>{
-          setSuccess(null);
-        },4000)
+        setSuccess(true);
       }})
       setProduct({})
       setFile();
@@ -65,10 +64,12 @@ export default function NewProduct() {
     }
   }
   
+
+
   return (
     <section className='w-full text-center body-wrapper mt-28 my-12'>
       <h2 className='text-2xl font-semibold mt-36 mb-12 text-brand'>Product Registration</h2>
-      {success && <p className='my-s'>✅{success}</p> }
+      {/* {success && <p className='my-s'>✅{success}</p> } */}
       { file && <img className="w-96 mx-auto mb-2" src={URL.createObjectURL(file[0])} alt='local file'/>}
         <form onSubmit={handleSubmit} className='flex flex-col px-12'>
           <label htmlFor="file" className='text-left font-semibold text-description'>Product Images</label>
@@ -86,6 +87,15 @@ export default function NewProduct() {
           <button  className="w-full bg-brand py-2 mt-5 px-4 text-white rounded-sm hover:brightness-110" disabled={isUploading} >
           { isUploading? 'Uploading...' : 'Add Products'}
           </button>
+          { success && <Popup child={
+            <div className='w-full  h-full flex flex-col justify-center items-center'>
+              <p className='w-5/6 text-center mx-auto text-lg -mb-3 text-black-400'> <span className=' border-b-8 border-[#ffe7e2]'>Item </span>has been registered to database!</p>
+
+              <div className='w-5/6 mt-16 text-center'>
+                <button className='w-full sm:w-auto h-auto p-3 rounded-lg border border-gray-400 text-gray hover:brightness-110' onClick={()=>{setSuccess(false)}}>Close</button> 
+              </div>
+            </div>
+            }/>}
         </form>
     </section>
   );

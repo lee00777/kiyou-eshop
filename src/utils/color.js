@@ -4,7 +4,7 @@ export default function colorMatch(color) {
     } else if (color === "Black") {
         return <p className="h-2 w-2 mr-1 rounded-full bg-black"></p>;
     } else if (color === "Gray") {
-        return <p className="h-2 w-2 mr-1 rounded-full bg-gray-500"></p>;
+        return <p className="h-2 w-2 mr-1 rounded-full bg-gray-300"></p>;
     } else if (color === "Pink") {
         return <p className="h-2 w-2 mr-1  rounded-full bg-pink-500"></p>;
     } else if (color === "Beige") {
@@ -27,5 +27,9 @@ export default function colorMatch(color) {
         return <p className="h-2 w-2 mr-1 rounded-full bg-orange-900"></p>;
     } else if (color === "Blue") {
         return <p className="h-2 w-2 mr-1 rounded-full bg-blue-300"></p>;
+    } else if (color === "Orange") {
+        return <p className="h-2 w-2 mr-1 rounded-full bg-orange-400"></p>;
+    } else if (color === "Dark gray") {
+        return <p className="h-2 w-2 mr-1 rounded-full bg-gray-500"></p>;
     }
 }

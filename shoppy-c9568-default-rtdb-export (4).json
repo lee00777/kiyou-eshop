@@ -1,0 +1,356 @@
+{
+    "admins": ["eoleEwONLpb44CzyagFMs7DRgVD2"],
+    "carts": {},
+    "products": {
+        "07d90d98-42df-48be-926e-3010108fcc91": {
+            "category": ["Skirt", "Long", "Formal"],
+            "colors": ["Green", "Purple", "Gray", "Beige", "Pink"],
+            "description": "Daily work skirt - Pastel colors",
+            "id": "07d90d98-42df-48be-926e-3010108fcc91",
+            "image": {
+                "options": ["https://res.cloudinary.com/dmppn3noc/image/upload/v1715200987/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB1_hnq6qi.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200834/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB2_rkelev.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200792/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB3_w5lleg.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200803/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB4_x1z8wv.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200804/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB5_fyljpo.png"],
+                "product": ["https://res.cloudinary.com/dmppn3noc/image/upload/v1715200727/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B31_quq3ep.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200646/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B32_w34jui.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200645/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B33_pmtpdv.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200654/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B34_zka170.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200650/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B35_ziohwd.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200728/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B36_gnfl5c.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200652/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/h%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B37_cehxmv.jpg"]
+            },
+            "price": 130,
+            "quantity": 1,
+            "size": ["S", "M", "L", "XL"],
+            "title": "H Line Skirt",
+            "trend": ["New", "Best"]
+        },
+        "15943657-22f8-4c32-86fe-a7b610ded0a3": {
+            "category": ["Dress", "Short", "Formal"],
+            "colors": ["Pink", "Black"],
+            "description": "Formal style flare mini dress",
+            "id": "15943657-22f8-4c32-86fe-a7b610ded0a3",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1715727175/kt7axokpax234otfxcxf.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727175/rsiahwqrrf7vow8y9aya.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1715727170/hvtniv97a6f3uzluwwg3.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727171/jyul9twoj4utdocragm0.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727172/y8s9pp1y482yubvil3er.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727172/bj9knyvly9qzwzyyzxrd.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727173/g6hjfpe1zlntx6kjkdqs.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727173/am8fgy6aciwi73ytp2sg.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727174/l11mmrogoa9l8gswmlf6.jpg"]
+            },
+            "price": 130,
+            "size": ["S", "M", "L", "XL"],
+            "title": "Flare Mini Dress",
+            "trend": ["New", "Best"]
+        },
+        "2b46da53-6eab-4f69-8c67-58abdf82e539": {
+            "category": ["Skirt", "Long"],
+            "colors": ["Beige", "Pink", "Black"],
+            "description": "Formal skirt - Mermaid style",
+            "id": "2b46da53-6eab-4f69-8c67-58abdf82e539",
+            "image": {
+                "options": ["https://res.cloudinary.com/dmppn3noc/image/upload/v1715200618/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB1_iuf69q.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200695/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB2_m2ealw.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200696/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB3_exarpj.png"],
+                "product": ["https://res.cloudinary.com/dmppn3noc/image/upload/v1715200642/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B31_mgp6v9.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200701/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B32_me3joq.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200643/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B33_sxbv2d.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200640/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B34_orqvmj.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200641/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B35_yjqjmt.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200765/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B3/%E1%84%85%E1%85%A9%E1%86%BC_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%8E%E1%85%B36_tlsccd.jpg"]
+            },
+            "price": 75,
+            "quantity": 1,
+            "size": ["S", "M", "L", "XL"],
+            "title": "Long Skirt",
+            "trend": ["Summer", "Best"]
+        },
+        "3e36649d-f8b3-4989-b3c8-9cc972b217c3": {
+            "category": ["Shirt", "Short", "Casual"],
+            "colors": ["Ivory", "Yellow", "Orange", "Pink"],
+            "description": "Lovely frill style T shirt ",
+            "id": "3e36649d-f8b3-4989-b3c8-9cc972b217c3",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716058355/nzwieqtz3orwtwk415uj.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058355/lstpjjnlqwrenyg57xes.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058356/lds6uduwlgz0ggvga9v9.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058356/n3vu408xzvxmnzewi8rf.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716058350/tcl8wcckx8slcq0bmmrx.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058351/q0kme0seemh9lmwoccmg.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058352/njeb8hljtwogg9cl0gse.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058352/eik9eymgal4bpcpmszhw.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058353/yttkpbiehmcarurfnlas.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058354/gdgbnozw1lidhute9wuj.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058354/pao0tcasdwej926ll7vi.jpg"]
+            },
+            "price": 45,
+            "size": ["S", "M", "L"],
+            "title": "Frill style T shirt",
+            "trend": ["New", "Best"]
+        },
+        "42ef9f7e-f83b-4208-b60f-24df0ab44fe0": {
+            "category": ["Pants", "Short", "Casual"],
+            "colors": ["Light blue", "Dark blue"],
+            "description": "Casual style high-waisted pants with A line",
+            "id": "42ef9f7e-f83b-4208-b60f-24df0ab44fe0",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716060585/ayzatijs7dkfgsgjc8j0.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060586/yrgr0pgxmsf3nlkhwamp.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716060581/zqhesqz9bscmaxvvkpvz.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060582/aqjzvxzl88uxww9moyf0.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060582/kiaucxqeezog4bcffhsd.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060583/kadf4jhjbqrj1njyzfh6.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060583/cg8udadkhplvtgb05ikm.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060584/vgmccuvwpa4ibvjztvee.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060584/xo6xkac204txfgl3xakr.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060585/y4ogndxz1cwejevlquvg.jpg"]
+            },
+            "price": 50,
+            "size": ["S", "M", "L"],
+            "title": "A line high-waisted pants",
+            "trend": ["Summer"]
+        },
+        "456ed978-ecb2-4784-8a5e-8d76c1a54d28": {
+            "category": ["Pants", "Short", "Casual"],
+            "colors": ["Beige", "Ivory", "Light blue", "Green", "Black"],
+            "description": "Comfortable elastic waistband shorts",
+            "id": "456ed978-ecb2-4784-8a5e-8d76c1a54d28",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084167/tgzvgr4bhr3dk5q3dkrx.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084168/k3dfz1ottnlfxhwqmjpl.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084169/c7pmjdb7ouceasgoec3g.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084169/vyuliarlehqhy34g6dd9.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084170/fvvhpdi85jmcyu8powvx.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084161/fgxogna520qrzufodvwg.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084162/jjd9bxolo8zcgx3u31fw.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084163/fai7h3yn7q2oebtbol69.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084164/m0yi7roscfuu1kfljehs.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084164/oexzyvlthv8obvgfmldl.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084165/xxwc8fxua00keftyupem.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084166/ptbdw3unkh5lhyp9zt1y.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084167/bcj8qkmcojlwahgpjmq7.png"]
+            },
+            "price": 35,
+            "size": ["S", "M", "L"],
+            "title": "Short Pant",
+            "trend": ["Summer", "New"]
+        },
+        "47e0cf02-f5ed-4b25-bb4b-d51e2561b623": {
+            "category": ["Cardigans", "Short", "Casual"],
+            "colors": ["Gray", "Pink", "Light blue", "Dark blue", "Black"],
+            "description": "Thin and soft stripe cardigans",
+            "id": "47e0cf02-f5ed-4b25-bb4b-d51e2561b623",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1715726894/cse7ubgzg5rggovlzomr.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715726894/qigk5emao5hk4a4ggxd5.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715726895/zqpafqq4wwppv0opt2yc.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715726896/vhuocxseupoc9xqb27ox.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715726896/xcetgr0oyecjlsmedwxl.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1715726890/ugxxctnyp6sj49i5qdmg.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715726890/eqgo1o9benia69qokoto.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715726891/xngilrrchg9vdm2m9log.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715726892/jlef5iqmjm9cnziiumiv.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715726892/l2t6xxkbz28qoehavrsa.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715726893/ze0ildcco9dafay3etwn.jpg"]
+            },
+            "price": 73,
+            "size": ["S", "M", "L"],
+            "title": "Stripe Cardigans",
+            "trend": ["Summer"]
+        },
+        "57b613f1-f72a-411c-99c7-f64e69bbc7b8": {
+            "category": ["Outer", "Long", "Casual"],
+            "colors": ["Beige", "Black", " Brown"],
+            "description": "Lightweight long sleeve frill jacket",
+            "id": "57b613f1-f72a-411c-99c7-f64e69bbc7b8",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716058493/egubgkpfybtwtcjyzlxi.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058494/njjwqmzvq0kxcyobpulo.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058495/vqw2x5c9dgqgtbuycyhb.jpg"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716058489/jbuponojnblxpqzxw6qw.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058490/ysip5ybolcbbg7v8zlzg.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058491/hnczhsmbwanvc1mrd4iv.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058491/dfvsbdtfefylol0tqvat.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058492/idox5kntp8n5snitipgz.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058492/j4o8f3dszykac4bmpiek.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058493/h3c1lscjph6silo5jqqy.jpg"]
+            },
+            "price": 120,
+            "size": ["S", " M", " L", " XL"],
+            "title": "Frill Jumper",
+            "trend": ["Best", " New"]
+        },
+        "5a3c447b-499c-45bf-b541-95fe571654d1": {
+            "category": ["Outer", "Jacket", "Formal"],
+            "colors": ["Dark blue", "Black", "Light blue"],
+            "description": "Lightweight and comfortable long-sleeve denim jacket",
+            "id": "5a3c447b-499c-45bf-b541-95fe571654d1",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084009/rzltwkt7qalfzifyv0rr.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084010/p8rywmaruvsr2s3p5xcg.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084011/voudhb6pezd3wxudslq1.jpg"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084005/txjpxjh3r65ilsh76j5l.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084006/naggwlapid6l8eblgjmk.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084006/l83chtam0sfmsvfj8ixi.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084007/omj74rsy4zyjbbcmhbdm.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084008/syhxv7ux3qqfztlfimcc.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084008/hyia6a4opondgkadcmn0.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084009/noyocyaoidi0xawnsu5h.jpg"]
+            },
+            "price": 85,
+            "size": ["FREE"],
+            "title": "Denim Jacket",
+            "trend": ["New"]
+        },
+        "602525bd-0b8d-4bd9-a4da-d0e9d4383c26": {
+            "category": ["Outer", "Knit", "Short", "Casual"],
+            "colors": ["Black", "Brown", "Light blue", "Red"],
+            "description": "Casual style v neck knit",
+            "id": "602525bd-0b8d-4bd9-a4da-d0e9d4383c26",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1715727416/eci8ffjwjmlbxrierl1l.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727417/shkumpjahqahc7xlyubv.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727417/t2yq1gbbk2znz8zvk17v.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727418/g0ffp4opiiwliawzvlx1.jpg"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1715727412/rcu3ghhsnu9a8tbqpvqs.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727412/tpgyn4x8dhm30bbrr3ap.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727413/feykmf7rtmspyohk6igi.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727413/szuqogfsivdjq7lrachp.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727414/lopjhcvtkzzt1yriezcb.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727415/q2uogirr9fn67uom1pvg.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1715727415/ompahtyhm7lu5cxuqet0.jpg"]
+            },
+            "price": 60,
+            "size": ["FREE"],
+            "title": "V neck knit",
+            "trend": ["Best"]
+        },
+        "6336c6f3-0dc7-4d1d-8df6-7d4101b3373b": {
+            "category": ["Cardigans", "Short", "Formal"],
+            "colors": ["Light blue", "Ivory", "Black"],
+            "description": "Soft knit cardigan with a boucle fabric",
+            "id": "6336c6f3-0dc7-4d1d-8df6-7d4101b3373b",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716080098/wc2qddmld4emzmuen0mr.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080098/ru3hr9qzo6lkdbila1lw.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080099/n3wnercztpv8i7mzoyto.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716080094/qjuycelvirmobijliew0.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080095/ve9iajwbphucrch68ju2.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080095/sdcrkzzrohgiqr8cpgjt.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080096/evuljfwmoa1dmsrc9xsw.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080097/ifewhdl4kbpzkj7luafs.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080097/rd9iwncyorrqockolvbk.jpg"]
+            },
+            "price": 90,
+            "size": ["S", "M", "L"],
+            "title": "Knit cardigan with a bouclé fabric",
+            "trend": ["New"]
+        },
+        "667afde4-4f9e-44b5-bdba-b0d068dd7ff9": {
+            "category": ["Accessory", "Shoes"],
+            "colors": ["Brown", "Black"],
+            "description": "Comfortable daily summer ribbon sandals",
+            "id": "667afde4-4f9e-44b5-bdba-b0d068dd7ff9",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716080296/vibhtxmeualfoj4ns7qe.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080297/flr9jui1dbyqjmz7sc6a.jpg"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716080292/dcahoqbzig1w9msn1p6j.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080292/zwxmetqucb8pqmbalu7i.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080293/qxpalxiysll1pxnacrfr.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080293/s671sleyaerdryq0wmyu.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080294/wfnqzrcgx5l3jolvddto.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080294/i3skuhjzub5ndrddknop.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080295/ivh2razzi6qkabsospue.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080296/dazh2r86ssenskek1hfl.jpg"]
+            },
+            "price": 45,
+            "size": ["235", "240", "245", "250", "255", "260", "265", "270"],
+            "title": "Ribbon sandals",
+            "trend": ["Summer"]
+        },
+        "709f23cf-d132-4454-81e6-33e92a1ff7e4": {
+            "category": ["Cardigan", "Long", "Formal"],
+            "colors": ["White", "Black", "Dark gray", "Gray", "Beige", "Ivory", "Brown"],
+            "description": "Thin and comfy knit cardigan",
+            "id": "709f23cf-d132-4454-81e6-33e92a1ff7e4",
+            "image": {
+                "options": ["https://res.cloudinary.com/dmppn3noc/image/upload/v1715200669/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB1_q57p90.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200734/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB10_ckq0zk.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200734/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB10_ckq0zk.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200739/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB2_wnoqdh.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200764/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB9_usn01t.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200764/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB9_usn01t.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200996/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB4_sclfdl.png"],
+                "product": ["https://res.cloudinary.com/dmppn3noc/image/upload/v1715200505/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB2_sxipub.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200505/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB3_l3f2zl.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200502/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB4_vqv9kv.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200548/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB5_bdo1bm.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200548/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%87%E1%85%B3%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A6%E1%86%A8%20%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB/%E1%84%80%E1%85%A1%E1%84%83%E1%85%B5%E1%84%80%E1%85%A5%E1%86%AB5_bdo1bm.jpg"]
+            },
+            "price": 70,
+            "quantity": 1,
+            "size": ["FREE"],
+            "title": "Knit Cardigan",
+            "trend": ["New", "Sales"],
+            "sales": 55
+        },
+        "93bfa9da-34cc-45f3-9338-5a677e3d4200": {
+            "category": ["Outer", "Long", "Formal"],
+            "colors": ["Ivory", "Light blue", "Pink", "Black"],
+            "description": "Formal style tweed jacket",
+            "id": "93bfa9da-34cc-45f3-9338-5a677e3d4200",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716060948/srf9gg0ocydmy5nyomho.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060949/zbxdhu9y4ark4ydlm5ce.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060949/ozz7klxpc2xoiykiqumb.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060950/zfkw4p1rhmngkyowze4t.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716060945/seprregk6ii0fhscrdu9.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060945/r1hwv8smcnjxpvs4u2qd.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060946/noz6tndljvp89dim7qps.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060946/l9gn4svnewxfrjjwx0ms.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060947/fvxew3tdyiagsvhtkmpu.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060947/q8uyijiw6boyvote9ltn.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060948/zs5h8skdbxrskkc2ldcp.jpg"]
+            },
+            "price": 140,
+            "size": ["S", "M", "L"],
+            "title": "Tweed Jacket",
+            "trend": ["Best"]
+        },
+        "a763462c-fe53-4212-a1a1-cdba5f64ad1b": {
+            "category": ["Accessory", "Watch"],
+            "colors": ["Brown", "Orange", "Black"],
+            "description": "Lovely square-shaped women's watch",
+            "id": "a763462c-fe53-4212-a1a1-cdba5f64ad1b",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716080872/olftvttunmfhpjshs0zi.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080873/fjreyb3sob2icauqwd6a.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080874/cgl9eyc8wpva88dvnkyr.jpg"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716080866/uqi2hym9r1grja86xpcb.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080867/xmcbeeeg3iusyw76vqgp.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080868/tzepd1h1ecgyl6gm8jpw.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080868/mr0y8shjgeb6xxtgzqox.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080869/d4zcl4dsgvlgd1uor1w6.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080870/dvxgvgdfwulkkh4i0ndi.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080871/sum24dpi3k80n7dbzaw5.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716080871/azq3rsfodxw2rvzbhl02.jpg"]
+            },
+            "price": 120,
+            "size": ["FREE"],
+            "title": "Square classic women watch",
+            "trend": ["New"]
+        },
+        "bddd8b09-e334-43b2-a7eb-14344eace5cb": {
+            "category": ["Dress", "Short", "Formal"],
+            "colors": ["Black", "Beige", "Pink"],
+            "description": "Comfortable slim-fit tweed dress",
+            "id": "bddd8b09-e334-43b2-a7eb-14344eace5cb",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084420/txpqtdfu4ctfhbzo5hau.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084421/mctzs4rk7bcb3fbglfrr.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084422/z5v15uevwwh7p642mtdv.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084417/ngy1rvpiwvmbyujo5fee.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084417/kc9mktp5qrfywbxsj7ev.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084418/upzoqb46uccsxo8dz6pn.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084418/yabhg8zmqhb400roln4w.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084419/wxsqhpqmlrim3ctnbmwi.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084419/ml4lenlzywk4fvmcprci.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084420/rodjbv4v3t9jramo2o8g.jpg"]
+            },
+            "price": 130,
+            "size": ["S", "M", "L"],
+            "title": "Tweed Dress",
+            "trend": ["New", "Best"]
+        },
+        "c40ba3f0-d84d-4a3c-9b67-abd82c4f330b": {
+            "category": ["Accessory", "Bag"],
+            "colors": ["Beige", "Pink", "Green", "Black"],
+            "description": "Feminine lovely chain shoulder backpack",
+            "id": "c40ba3f0-d84d-4a3c-9b67-abd82c4f330b",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084318/soktkegj3ixczqakglza.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084318/dwhfejglwpc1zvndsarp.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084319/ql2ld8si1o1w9tjzpvat.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084319/brezrvy7ipnafcic82yw.jpg"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084313/kpdlyqqeqke3sg0hbkld.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084314/h7qdjg7pp0n1lavyxrgz.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084315/i96ghy7tpqljmhmnq6oe.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084315/juxxxdrqrf03oahum7r8.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084316/x76nmmouek95ruija6ah.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084317/tgi2wqhdaiuhoeoal1fm.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084317/gu9ag3wp3czmdeavamdw.jpg"]
+            },
+            "price": 150,
+            "size": ["FREE"],
+            "title": "Chain shoulder backpack",
+            "trend": ["NEW"]
+        },
+        "cdbc5303-178a-4c57-be6e-7e055e291a7d": {
+            "category": ["Outer", "Long", "Formal"],
+            "colors": ["Black"],
+            "description": "Stylish double french coat",
+            "id": "cdbc5303-178a-4c57-be6e-7e055e291a7d",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716060802/yuivc1gsqzl4i6tsfgui.jpg"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716060798/kkq2x3dx9vn4bsyvhjf2.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060799/gsjee0ncyz0wxq6a0uyc.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060799/z7pxvobubsm6zb6u2mth.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060800/mcgwb8xvfljthijokx0g.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060800/fjhozdmebhkqkyq8fvox.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060801/k7hmajarwlwreyijtyud.jpg"]
+            },
+            "price": 155,
+            "size": ["FREE"],
+            "title": "Double french coat",
+            "trend": ["New"]
+        },
+        "d2da8b9b-b1bd-458f-83c3-7c0f4bb0937a": {
+            "category": ["Accessory", "Necklace"],
+            "colors": ["Ivory", "Green", "Pink", "Black"],
+            "description": "Feminine heart-shaped biz necklace",
+            "id": "d2da8b9b-b1bd-458f-83c3-7c0f4bb0937a",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716081208/tlowthmhvcliicqcryyq.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716081209/gvmguhexsm9cksirxk5h.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716081209/azkqsignufj67k4lbeiv.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716081210/x88u8tqfagoabfsc7wqd.jpg"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716081205/opplcazmkci9lbnrioc2.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716081206/x9xyeevak6ux8sud8lhc.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716081206/wmoe93ol2qvsspwuqm5p.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716081207/ptrnn5ausxel9l7ubcf3.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716081207/n4og1ofk4u0ixoup1gme.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716081208/td40iiay4hmrr1b28wgd.jpg"]
+            },
+            "price": 150,
+            "size": ["FREE"],
+            "title": "Heart-shaped necklace",
+            "trend": ["Best"]
+        },
+        "d42812f1-adf0-454b-8f77-3a69d90c28d6": {
+            "category": ["Accessory", "Hat"],
+            "colors": ["Yellow", "Green", "Dark blue"],
+            "description": "Casual style baseball cap",
+            "id": "d42812f1-adf0-454b-8f77-3a69d90c28d6",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716060159/hxcmhbfleqewtne7s6ny.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060160/za68bfmzt7cjrmab0qdx.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060160/em7njyrwbpunmahais62.jpg"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716060156/ergrtica3ghnkswi0r5k.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060156/nsj07rrsmxei8ed2yuw7.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060157/ilwxb6ird99rrykkh3fk.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060158/ugh2qkm2xsg2ygqpp2kc.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060158/xferqkblrqboijjkzlky.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716060159/tzs9zbmc5ayktqsx826d.jpg"]
+            },
+            "price": 45,
+            "size": ["FREE"],
+            "title": "Baseball Cap",
+            "trend": ["New"]
+        },
+        "d436bbd1-2bc2-4d06-aaaf-a56fec00f3cc": {
+            "category": ["Skirt", "Short", "Casual"],
+            "colors": ["Black", "Pink", "Beige", "Dark gray"],
+            "description": "Summer daily mini skirt with belt",
+            "id": "d436bbd1-2bc2-4d06-aaaf-a56fec00f3cc",
+            "image": {
+                "options": ["https://res.cloudinary.com/dmppn3noc/image/upload/v1715200662/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB1_sbtzkv.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715201021/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB2_cim1mz.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715201021/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB2_cim1mz.png", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715201031/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%86%B8%E1%84%89%E1%85%A7%E1%86%AB3_tgwhme.png"],
+                "product": ["https://res.cloudinary.com/dmppn3noc/image/upload/v1715200839/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B31_qhmtye.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200988/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B36_celyzd.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200837/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B33_gfmhaw.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200837/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B33_gfmhaw.jpg", "https://res.cloudinary.com/dmppn3noc/image/upload/v1715200729/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B3/%E1%84%90%E1%85%A6%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%84%90%E1%85%B35_jg4j0q.jpg"]
+            },
+            "price": 60,
+            "quantity": 1,
+            "size": ["S", "M", "L"],
+            "title": "Tennis Skirt",
+            "trend": ["Summer", "New"]
+        },
+        "d4ad266c-ec35-40f7-96cd-cfd759b8c939": {
+            "category": ["Shirt", "Long", "Casual"],
+            "colors": ["Light blue", "Pink", "Ivory"],
+            "description": "Lightweight and comfortable striped shirt",
+            "id": "d4ad266c-ec35-40f7-96cd-cfd759b8c939",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084498/p4o1dtxghgfropcy6eta.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084498/zq1mqm7idijmqqoske82.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084499/xy66xn4ghn0uayuz635q.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716084494/hvzxqzevgnm8kmcbuma3.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084495/yydutwidbvrkyrsul7r8.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084496/tjjylb9o9benx4rnyzsn.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084496/ev1mcpfrkup80qvf9kdo.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716084497/yb2omeyxowm7aspbr7vp.jpg"]
+            },
+            "price": 45,
+            "size": ["S", "M", "L"],
+            "title": "Striped shirt",
+            "trend": ["New"]
+        },
+        "e86f8349-47f5-4db3-a764-4b07f9b44910": {
+            "category": ["Pants", "Long", "Casual"],
+            "colors": ["Ivory", "Gray", "Black"],
+            "description": "Comfortable daily long wide pants",
+            "id": "e86f8349-47f5-4db3-a764-4b07f9b44910",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716059006/oy35hkgdortyrrwox9ck.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059007/ea50vfwmcv8lzjwulwkt.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059007/j8wpwzcy9w6jmdnkqytd.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716058988/euupu1mmqyi2ffavknji.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716058995/qoro8bvns6yrcrrkfc7o.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059001/pkmvalweta0l5zst8ouq.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059004/oijysnrcpilqxfemnrnd.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059005/x2ytwequz3wqnpgxdfgq.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059005/trkfngzqoizkukhvo4a4.jpg"]
+            },
+            "price": 60,
+            "size": ["S", " M", " L"],
+            "title": "Wide pants",
+            "trend": ["Best", " New"]
+        },
+        "fe30fdb1-a84b-4f11-868e-c613e4c86010": {
+            "category": ["Shirt", "Short", "Casual"],
+            "colors": ["Ivory", "Gray", "Black"],
+            "description": "Light linen long-sleeve T shirt",
+            "id": "fe30fdb1-a84b-4f11-868e-c613e4c86010",
+            "image": {
+                "options": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716059750/qull493jcadysavsji6w.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059750/b7sjwyvgp9vqisajaoci.png", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059751/b2awo2kkypqqcypplses.png"],
+                "product": ["http://res.cloudinary.com/dmppn3noc/image/upload/v1716059745/p1dqxgnemhyn80ra3pzi.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059746/q2fst389qstz9g0hwc8j.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059746/wjg5u2zefciiv7jxuryw.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059747/qrci7uof2ame6xa68kea.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059748/cjzqmma0txxmjocziiig.jpg", "http://res.cloudinary.com/dmppn3noc/image/upload/v1716059749/hbaqpf2igmyufrxj1myk.jpg"]
+            },
+            "price": 30,
+            "size": ["S", " M", " L"],
+            "title": "Linen long-sleeve T-shirt",
+            "trend": ["New", " Summer"]
+        }
+    },
+    "filters": {
+        "Skirt": ["Long", "Short", "Formal", "Casual"],
+        "Dress": ["Long", "Short", "Formal", "Casual"],
+        "Pants": ["Long", "Short", "Formal", "Casual"],
+        "Shirt": ["Long", "Short", "Formal", "Casual"],
+        "Cardigan": ["Long", "Short", "Formal", "Casual"],
+        "Outer": ["Long", "Short", "Formal", "Casual", "Knit", "Jacket"],
+        "Accessory": ["Shoes", "Hat", "Watch", "Bag", "Necklace"]
+    }
+}

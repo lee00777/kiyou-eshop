@@ -26,13 +26,13 @@ export default function CartItem({product, product: {id, image, title, option, q
           <div className='basis-1/3'>
             <p className='text md lg:text-lg text-brand font-bold'>{title}</p>
             <p className='text-md '>{product.description}</p>
-            <p className='border-b border-gray-400 my-1 w-full md:invisible'></p>
+            <p className='border-b border-gray-400 my-2 w-full md:invisible'></p>
           </div>
           <div className='text-left md:text-center basis-1/3 text-sm md:text-base '>
             {/* <h3 className='hidden md:block mb-2 text-sm md:text-base'>Options </h3> */}
             <p className='text-md'><b>Size:</b> {option.selectedSize}</p>
             <p className='text-md'><b>Color:</b> {option.selectedColor}</p>
-            <p className='border-b border-gray-400 my-1 w-full md:invisible'></p>
+            <p className='border-b border-gray-400 my-2 w-full md:invisible'></p>
           </div>
           <div className='basis-1/3 text-left md:text-center'>
             <p className='text-sm md:text-lg'>${price}</p>

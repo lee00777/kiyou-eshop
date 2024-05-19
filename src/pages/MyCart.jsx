@@ -20,20 +20,21 @@ export default function MyCart() {
 
   return (
     <section className='p-16 flex flex-col body-wrapper bg-background'>
+      <p className='text-2xl text-center font-bold pb-4 border-b border-gray-300'>My cart</p>
       { !hasProducts && 
-        <div className='mt-32 h-96 flex flex-col items-center justify-center bg-white w-4/6 mx-auto rounded-lg'>
+        <div className='mt-32 h-96 flex flex-col items-center justify-center bg-white  w-4/6 mx-auto rounded-lg'>
           {/* <LiaCartPlusSolid className="text-2xl w-24 h-24 rounded-full bg-background text-gray-400 p-2 mb-8"/> */}
           <BsCartPlus className="text-gray-400 text-md w-24 h-24 bg-background rounded-lg p-4 mb-8"/>
           <p className="font-bold text-xl mb-4">Your cart is empty. </p> 
           <p className="">Find your style at <span className="text-brand">KIYOU! </span> </p>
         </div>}
       { hasProducts && <>
-        <ul className='border-b border-gray-300 mb-8 p-4 px-8 mt-14'>
+        <ul className='border-b border-gray-300 mb-8 p-4 px-8 mt-10'>
           {products && products.map((product)=>{
             return <CartItem key={product.id} product={product} />
           })}
         </ul>
-        <div className='flex flex-col md:flex-row px-8 w-full justify-evenly items-center mb-6'>
+        <div className='flex flex-col md:flex-row px-8 bg-brand w-full justify-evenly items-center mb-6'>
           <PriceCard text="Product Price" price={totalPrice}/>
           <BsFillPlusCircleFill className='shrink-0'/>
           <PriceCard text="Delivery fee" price={SHIPPING}/>

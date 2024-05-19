@@ -47,7 +47,7 @@ export default function ProductDetail() {
 
     if(uid=== null){
       setNotLoggedIn(true);
-
+      console.log('뭐임');
     }else{
       // 장바구니에 추가하기
       const product ={
@@ -183,8 +183,8 @@ export default function ProductDetail() {
 
 
           { addedCart && <Popup child={
-            <div className='w-full h-full flex flex-col justify-center items-center '>
-              <p className='w-5/6 text-center mx-auto text-lg -mb-3 text-black-400 mt-5'> <span className=' border-b-8 border-[#ffe7e2]'>"{title}" </span>has been added to your cart</p>
+            <div className='w-full  h-full flex flex-col justify-center items-center '>
+              <p className='w-5/6  text-center mx-auto text-lg -mb-3 text-black-400 mt-5'> <span className=' border-b-8 border-[#ffe7e2]'>"{title}" </span>has been added to your cart</p>
 
               <div className='w-5/6 mt-12 text-center mb-3'>
                 <button className='w-full sm:w-auto h-auto p-3 mb-2 rounded-lg border border-gray-400 text-gray hover:brightness-110' onClick={()=>{setAddedCart(false)}}>Close</button> 

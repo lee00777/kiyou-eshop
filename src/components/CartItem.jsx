@@ -23,7 +23,6 @@ export default function CartItem({product, product: {id, image, title, option, q
     <li key={id}  className='flex flex-col md:flex-row cursor-pointer justify-between my-4 items-center p-10 border rounded-lg bg-white border-gray-200 shadow-lg '>
       <img className="w-24 md:w-48 rounded-lg " src={image.product[0]} alt={title} onClick={()=>{navigate(`/products/${id}`, {state:{product:original}})}} />
       <div className='flex-1 flex justify-between ml-4'>
-        {/* <div className='flex basis-4/5 justify-between items-center text-sm md:text-base '> */}
         <div className='mt-5 md:mt-0 md:flex basis-4/5 justify-between items-center text-sm md:text-base' onClick={()=>{navigate(`/products/${id}`, {state:{product:original}})}} >
           <div className='basis-1/3'>
             <p className='text md lg:text-lg text-brand font-bold'>{title}</p>

@@ -3,36 +3,21 @@ import CartItem from '../components/CartItem';
 import PriceCard from '../components/PriceCard';
 import { BsFillPlusCircleFill } from 'react-icons/bs';
 import { FaEquals } from 'react-icons/fa';
-import Button from '../components/UI/Button';
 import useCart from '../hooks/useCart';
-import { LiaCartPlusSolid } from "react-icons/lia";
 import { BsCartPlus } from "react-icons/bs";
 import { RiLoaderLine } from "react-icons/ri";
 import Popup from '../components/Popup';
+import { useState } from 'react';
 const SHIPPING = 30;
 
 export default function MyCart() {
   const { cartQuery: { isPending, data: products}} = useCart();
+  const [ isOrdered, setIsOrdered ] = useState(false);
 
   if( isPending )return <div className='flex justify-center mt-60'><RiLoaderLine className="animate-loading w-20 h-20 mt-10 text-brand" /></div>
 
   const hasProducts = products && products.length >0;
   const totalPrice = products && products.reduce((prev,current) => prev + parseInt(current.price) * current.quantity, 0);
-
-  const handleOrder = () =>{
-    console.log('클릭!')
-    return <Popup child={
-      <div className='w-full  h-full flex flex-col justify-center items-center'>
-        <p className='w-5/6 text-center mx-auto text-lg -mb-3 text-black-400'> <span className=' border-b-8 border-[#ffe7e2]'>Your order </span>will be shipped soon!</p>
-
-      <div className='w-5/6 mt-16 text-center'>
-        <button className='w-full sm:w-auto h-auto p-3 rounded-lg border border-gray-400 text-gray hover:brightness-110' >Close</button> 
-      </div>
-    </div>
-    }/>
-  }
-
-
   return (
     <section className='p-16 flex flex-col body-wrapper bg-background'>
       <p className='text-2xl text-center font-bold pb-4 border-b border-gray-300'>My cart</p>
@@ -56,7 +41,21 @@ export default function MyCart() {
           <FaEquals className='shrink-0'/>
           <PriceCard text="Total Price" price={SHIPPING + totalPrice}/>
         </div>
-        <button className="w-5/6 mt-5 mx-auto bg-brand text-white hover:brightness-110" onClick={handleOrder}>ORDER</button>
+        <button className="w-5/6 mt-5 mx-auto bg-brand text-white hover:brightness-110" onClick={()=>setIsOrdered(true)}>ORDER</button>
+        {
+          isOrdered && <Popup child={
+            <div className='w-full  h-full flex flex-col justify-center items-center'>
+              <p className='w-5/6 text-center mx-auto text-lg -mb-3 text-black-400'> 
+                <p className='mb-2'>Thank you for your order.</p>
+                <span className='font-bold border-b-8 border-[#ffe7e2]'>Your order </span>will be shipped soon!
+              </p>
+      
+            <div className='w-5/6 mt-16 text-center'>
+              <button className='w-full sm:w-auto h-auto p-3 rounded-lg border border-gray-400 text-gray hover:brightness-110' onClick={()=>setIsOrdered(false)}>Close</button> 
+            </div>
+          </div>
+          }/>
+        }
       </>}
     </section>
   );

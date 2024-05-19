@@ -28,7 +28,7 @@ const responsive = {
 };
 
 export default function ProductDetail() {
-  const { uid, user } = useAuthContext();
+  const { uid } = useAuthContext();
   const { login} = useAuthContext();
   const navigate = useNavigate();
   const { addOrUpdateItem } = useCart();
@@ -40,14 +40,13 @@ export default function ProductDetail() {
   const [ selectedOptionIdx, setSelectedOptionIdx ] = useState(0);
   const [ addedCart, setAddedCart ] = useState(false);
   const [ notLoggedIn, setNotLoggedIn ] = useState(false);
+  
   const handleSizeSelect = (ev)=>{
     setSelectedSize(ev.target.value);
   }
   const handleClick = () =>{
-
     if(uid=== null){
       setNotLoggedIn(true);
-      console.log('뭐임');
     }else{
       // 장바구니에 추가하기
       const product ={
@@ -108,12 +107,13 @@ export default function ProductDetail() {
   }
 
   useEffect(()=>{
-    if(uid){
-      setNotLoggedIn(false);
-    }else{
-      setNotLoggedIn(true)
-    }
-  },[uid])
+    window.scrollTo({top:0 });
+  })
+
+  const handleLogin = ()=>{
+    login();
+    setNotLoggedIn(false);
+  }
 
   return (
     <>
@@ -200,7 +200,7 @@ export default function ProductDetail() {
 
             <div className='w-5/6 mt-12 text-center '>
               <button className='w-full sm:w-auto h-auto p-3 rounded-lg border border-gray-400 text-gray hover:brightness-110' onClick={()=>{setNotLoggedIn(false)}}>Close</button> 
-              <button className='w-full sm:w-auto h-auto p-3 mb-3 rounded-lg md:ml-5  text-white bg-brand hover:brightness-110' onClick={login} >Log In</button>
+              <button className='w-full sm:w-auto h-auto p-3 mb-3 rounded-lg md:ml-5  text-white bg-brand hover:brightness-110' onClick={handleLogin} >Log In</button>
             </div>
           </div>
             }/>

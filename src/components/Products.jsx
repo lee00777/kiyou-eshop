@@ -24,7 +24,10 @@ export default function Products({category}) {
     setClickedFilter('All')
   },[category])
 
-
+  useEffect(()=>{
+    window.scrollTo({top:0 });
+  })
+  
   return (
     <div className='body-wrapper max-w-screen-2xl mx-auto'>
       {isPending && <div className='flex justify-center mt-60'><RiLoaderLine className="animate-loading w-20 h-20 mt-10 text-brand" /></div>}
@@ -49,24 +52,8 @@ export default function Products({category}) {
 
       <ul className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 p-16 mt-4 my-12  h-auto'>
         {/* 맨 처음 페이지에 모든 제품들 다 보여주기  */}
-        {console.log("category:", category, category.length)}
         { category.length === 0 && products && products.map(product => <ProductCard key={product.id} product={product}/>)}
         {/* skirts, dresses, pants처럼 특정카테고리 클릭하면 보여주기 */}
-        {/* {category && category.length >=1 && products && clickedFilter === 'All' && 
-          products
-            .filter(item => item.category.includes(category))
-            .map(item => (
-              <ProductCard key={item.id} product={item} />
-            ))
-        } */}
-        {/* {category && category.length >=1 && products && filterFlag && 
-          products
-            .filter(item => item.category.includes(category))
-            .filter(item => item.category.includes(clickedFilter))
-            .map(item=>{
-              return   <ProductCard key={item.id} product={item} />
-            })
-        } */}
           {category && category.length >= 1 && products && (
             clickedFilter === 'All' ?
               products

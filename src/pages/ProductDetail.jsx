@@ -1,11 +1,13 @@
-import  Button from '../components/UI/Button'
 import React from 'react';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import useCart from '../hooks/useCart';
 import Carousel from 'react-multi-carousel';
 import { GrNext, GrPrevious } from "react-icons/gr";
-import { FcRemoveImage } from "react-icons/fc";
+import {useNavigate} from "react-router-dom"
+import Popup from '../components/Popup';
+import { useAuthContext } from '../contexts/AuthContext';
+import { useEffect } from 'react';
 
 const responsive = {
   desktop: {
@@ -26,31 +28,42 @@ const responsive = {
 };
 
 export default function ProductDetail() {
-  const [ success, setSuccess] = useState();
+  const { uid, user } = useAuthContext();
+  const { login} = useAuthContext();
+  const navigate = useNavigate();
   const { addOrUpdateItem } = useCart();
   const {state:{
     product:{id, image,title,description, size, trend, colors, category, price}
   }} = useLocation();
   const [ selectedSize, setSelectedSize ] = useState(size && size[0]);
   const [ selectedColor, setSelectedColor] = useState(colors && colors[0]);
+  const [ selectedOptionIdx, setSelectedOptionIdx ] = useState(0);
+  const [ addedCart, setAddedCart ] = useState(false);
+  const [ notLoggedIn, setNotLoggedIn ] = useState(false);
   const handleSizeSelect = (ev)=>{
     setSelectedSize(ev.target.value);
   }
   const handleClick = () =>{
-    // 장바구니에 추가하기
-    const product ={
-      id, image, title, price, description, option: {selectedSize, selectedColor}, quantity:1
-    }
-    addOrUpdateItem.mutate(product, {
-      onSuccess: ()=>{
-        setSuccess('Added to Cart');
-        setTimeout(()=> setSuccess(null), 3000)
+
+    if(uid=== null){
+      setNotLoggedIn(true);
+      console.log('뭐임');
+    }else{
+      // 장바구니에 추가하기
+      const product ={
+        id, image, title, price, description, option: {selectedSize, selectedColor}, quantity:1
       }
-    });
+      addOrUpdateItem.mutate(product, {
+        onSuccess: ()=>{
+          setAddedCart(true)
+        }
+      });
+    }
   }
 
   const handleOption = (idx) =>{
     setSelectedColor(colors[idx]);
+    setSelectedOptionIdx(idx)
   }
 
   // next, before btn 핸들링
@@ -93,6 +106,14 @@ export default function ProductDetail() {
   const errorHandling = (ev)=>{
     ev.target.src="/images/test.jpeg";
   }
+
+  useEffect(()=>{
+    if(uid){
+      setNotLoggedIn(false);
+    }else{
+      setNotLoggedIn(true)
+    }
+  },[uid])
 
   return (
     <>
@@ -146,7 +167,7 @@ export default function ProductDetail() {
               <span className='text-black ml-3 font-normal'>{selectedColor}</span>
             </p>
             <div className='w-full mt-5 flex ml-5 justify-start flex-wrap'>
-              {image && image.options.map((option, idx)=> <img className="w-20 mr-2 cursor-pointer" key={idx} src={option} alt="color option" onClick={()=>{handleOption(idx)}}/>)}
+              {image && image.options.map((option, idx)=> <img className={`w-20 mr-2 cursor-pointer ${selectedOptionIdx === idx? "border-4 border-brand" : ""}`} key={idx} src={option} alt="color option" onClick={(ev)=>{handleOption(idx,ev)}}/>)}
             </div>
           </div>
           {/* 사이즈 */}
@@ -156,15 +177,36 @@ export default function ProductDetail() {
               { size && size.map((option, index)=> <option key={index}>{option}</option>)}
             </select>
           </div>
-          { success && 
-            <div className='w-full bg-green-700'>
-              <p className='text-lg text-white text-center mb-3'>✅ {success}</p>
-            </div>
-          }
-          <div className="text-center mt-3 h-8 flex items-center justify-center mt-5 bg-button y-2 px-4 text-white rounded-sm hover:brightness-110" onClick={handleClick}>
+          <div className="text-center h-8 flex items-center justify-center mt-5 bg-button y-2 px-4 text-white rounded-sm hover:brightness-110" onClick={handleClick}>
             <button className="cursor-pointer">ADD TO CART</button>
           </div>
 
+
+          { addedCart && <Popup child={
+            <div className='w-full  h-full flex flex-col justify-center items-center'>
+              <p className='w-5/6  text-center mx-auto text-lg -mb-3 text-black-400'> <span className=' border-b-8 border-[#ffe7e2]'>"{title}" </span>has been added to your cart</p>
+
+              <div className='w-5/6 mt-16 text-center'>
+                <button className='w-full sm:w-auto h-auto p-3 rounded-lg border border-gray-400 text-gray hover:brightness-110' onClick={()=>{setAddedCart(false)}}>Close</button> 
+                <button className='w-full sm:w-auto h-auto p-3 mb-3 rounded-lg md:ml-5  text-white bg-brand hover:brightness-110' onClick={()=>{navigate(`/carts`)}}>View Cart</button>
+              </div>
+            </div>
+            }/>
+          }
+        {
+          notLoggedIn &&  <Popup child={
+            <div className='w-full h-full flex flex-col justify-center items-center'>
+            <p className='w-5/6  text-center mx-auto text-lg -mb-3 text-black-400'>To add items to your cart, please <span className=' border-b-8 border-[#ffe7e2]'>login </span>.</p>
+
+            <div className='w-5/6 mt-12 text-center '>
+              <button className='w-full sm:w-auto h-auto p-3 rounded-lg border border-gray-400 text-gray hover:brightness-110' onClick={()=>{setNotLoggedIn(false)}}>Close</button> 
+              <button className='w-full sm:w-auto h-auto p-3 mb-3 rounded-lg md:ml-5  text-white bg-brand hover:brightness-110' onClick={login} >Log In</button>
+            </div>
+          </div>
+            }/>
+        }
+
+          
         </div>
       </section>
     </>

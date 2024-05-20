@@ -20,7 +20,7 @@ export default function MyCart() {
   const totalPrice = products && products.reduce((prev,current) => prev + parseInt(current.price) * current.quantity, 0);
   return (
     <section className='p-16 flex flex-col body-wrapper bg-background'>
-      <p className='text-2xl text-center font-bold pb-4 border-b border-gray-300'>My cart</p>
+      {/* <p className='text-2xl text-center font-bold mt-20'>My cart</p> */}
       { !hasProducts && 
         <div className='mt-32 h-96 flex flex-col items-center justify-center bg-white  w-4/6 mx-auto rounded-lg'>
           {/* <LiaCartPlusSolid className="text-2xl w-24 h-24 rounded-full bg-background text-gray-400 p-2 mb-8"/> */}

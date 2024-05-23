@@ -1,12 +1,12 @@
-import React from 'react';
-// import { useQuery } from '@tanstack/react-query';
-// import { getProducts } from '../api/firebase';
+import React, { Suspense } from 'react';
 import ProductCard from './ProductCard';
 import useProducts from '../hooks/useProducts';
 import { RiLoaderLine } from "react-icons/ri";
 import useFilters from '../hooks/useFilters';
 import { useState } from 'react';
 import { useEffect } from 'react';
+const CardComponent = React.lazy(() => import('./ProductCard'));
+
 
 
 export default function Products({category}) {
@@ -54,12 +54,38 @@ export default function Products({category}) {
         {/* 맨 처음 페이지에 모든 제품들 다 보여주기  */}
         { category.length === 0 && products && products.map(product => <ProductCard key={product.id} product={product}/>)}
         {/* skirts, dresses, pants처럼 특정카테고리 클릭하면 보여주기 */}
-          {category && category.length >= 1 && products && (
+        {/* { category && category.length >= 1 && products && (
+          clickedFilter === 'All' ?
+            products
+              .filter(item => item.category.includes(category))
+              .map(item => (
+                <ProductCard key={item.id} product={item} />
+              ))
+          :
+            filterFlag &&
+            (() => {
+              let filteredProducts = products
+                .filter(item => item.category.includes(category))
+                .filter(item => item.category.includes(clickedFilter));
+              if (filteredProducts.length === 0) {
+                return  <p className='col-start-2 col-span-2 mt-10 text-center text-lg text-description'>🚫 No items match the selected filter </p>
+              } else {
+                return filteredProducts.map(item => (
+                  <ProductCard key={item.id} product={item} />
+                ));
+              }
+            })()
+          )
+        } */}
+
+        { category && category.length >= 1 && products && (
             clickedFilter === 'All' ?
               products
                 .filter(item => item.category.includes(category))
                 .map(item => (
-                  <ProductCard key={item.id} product={item} />
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <CardComponent key={item.id} product={item} />
+                  </Suspense>
                 ))
             :
               filterFlag &&
@@ -71,11 +97,14 @@ export default function Products({category}) {
                   return  <p className='col-start-2 col-span-2 mt-10 text-center text-lg text-description'>🚫 No items match the selected filter </p>
                 } else {
                   return filteredProducts.map(item => (
-                    <ProductCard key={item.id} product={item} />
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <CardComponent key={item.id} product={item} />
+                    </Suspense>
                   ));
                 }
               })()
-          )}
+          )
+        }
       </ul>
     </div>
   );

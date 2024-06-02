@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 import { getDatabase, ref, set, get, remove } from "firebase/database";
+import { query, orderBy, limit, collection, doc, setDoc } from "firebase/firestore";
 import { v4 as uuid } from "uuid";
 
 const firebaseConfig = {
@@ -27,6 +29,7 @@ export function onUserStateChange(callback) {
     onAuthStateChanged(auth, async (user) => {
         // [1] firebase database로 직접가서 admins라는 key에 {0: 원하는유저의 user.uid, 1:원하는유저2의 user.id...} 이렇게 추가해준다 (참고:배열이 없어서 {}로 해야함)
         const updatedUser = user ? await adminUser(user) : user;
+
         callback(updatedUser);
     });
 }

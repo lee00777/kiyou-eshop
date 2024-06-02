@@ -4,31 +4,20 @@ import { getProducts as fetchProducts, addNewProduct } from '../api/firebase';
 export default function useProducts(){
   const queryClient = useQueryClient();
 
-  const productsQuery = useQuery({ // productsQuery
+  const productsQuery = useQuery({
     queryKey: ['products'],
     queryFn: () => {
       return fetchProducts()
     },
-    // staleTime: 1000 * 60
+    staleTime:1000*60*5 ,// 5분임. 5초는 5000,
+    refetchOnMount:false
   })
-
-  // const addProduct = useMutation((product,url)=>{addNewProduct(product,url)},{
-  //   onSuccess: () => queryClient.invalidateQueries(['products'])
-  // }) 
-
-  // const addProduct = useMutation(
-  //   ({ product, url }) => addNewProduct(product, url),
-  //   {
-  //     onSuccess: () => queryClient.invalidateQueries(['products']),
-  //   }
-  // );
 
   const addProduct = useMutation({
     mutationFn: ({product, urls}) => {
       addNewProduct(product,urls)
     },
     onSuccess: ()=> queryClient.invalidateQueries({queryKey:['products']})
-    // onSuccess: ()=> queryClient.invalidateQueries({queryKey:'products'})
   }) 
 
 

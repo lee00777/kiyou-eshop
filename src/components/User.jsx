@@ -7,8 +7,7 @@ export default function User({ user: { photoURL, displayName } }) {
       <img
         className='w-10 h-10 rounded-full mr-2'
         src={photoURL}
-        alt={displayName}
-      />
+        alt={displayName} />
       <span className='hidden md:block'>{displayName}</span>
     </div>
   );

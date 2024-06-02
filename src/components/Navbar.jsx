@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { BsFillPencilFill } from 'react-icons/bs';
+import { useAuthContext } from "../contexts/AuthContext";
 import User from './User';
 import Button from './UI/Button';
-import { useAuthContext } from "../contexts/AuthContext";
 import CartStatus from './CartStatus';
 
 const LINKSTYLE = "text-xs lg:text-base hover:underline decoration-solid";
 
 export default function Navbar() {
   const { user, login, logout } = useAuthContext();
-  const [hideSection, setHideSection] = useState(false);
+  const [ hideSection, setHideSection ] = useState(false);
 
   useEffect(()=>{
     const handleScroll = () => {
@@ -58,29 +58,7 @@ export default function Navbar() {
             {user && <Button text={'Logout'} onClick={logout} />}
           </nav>
         </div>
- 
       </section>
-
-      {/* <section className='flex justify-between border-b border-gray-300 p-2 mt-5'>
-        <Link to='/' className='flex items-center text-4xl text-brand'>
-          <FiShoppingBag />
-          <h1>KIYOU</h1>
-        </Link>
-        <nav className='flex items-center gap-4 font-semibold'>
-          <Link to='/products'>Products</Link>
-          {user && <Link to='/carts'>
-              <CartStatus />
-          </Link>}
-          {user && user.isAdmin && (
-            <Link to='/products/new' className='text-2xl'>
-              <BsFillPencilFill />
-            </Link>
-          )}
-          {user && <User user={user} />}
-          {!user && <Button text={'Login'} onClick={login} />}
-          {user && <Button text={'Logout'} onClick={logout} />}
-        </nav>
-      </section> */}
     </header>
   );
 }

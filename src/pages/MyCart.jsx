@@ -1,33 +1,33 @@
 import React from 'react';
 import CartItem from '../components/CartItem';
 import PriceCard from '../components/PriceCard';
+import useCart from '../hooks/useCart';
+import Popup from '../components/Popup';
 import { BsFillPlusCircleFill } from 'react-icons/bs';
 import { FaEquals } from 'react-icons/fa';
-import useCart from '../hooks/useCart';
 import { BsCartPlus } from "react-icons/bs";
 import { RiLoaderLine } from "react-icons/ri";
-import Popup from '../components/Popup';
 import { useState } from 'react';
 const SHIPPING = 30;
 
 export default function MyCart() {
   const { cartQuery: { isPending, data: products}} = useCart();
   const [ isOrdered, setIsOrdered ] = useState(false);
-
+  
   if( isPending )return <div className='flex justify-center mt-60'><RiLoaderLine className="animate-loading w-20 h-20 mt-10 text-brand" /></div>
 
   const hasProducts = products && products.length >0;
   const totalPrice = products && products.reduce((prev,current) => prev + parseInt(current.price) * current.quantity, 0);
+
   return (
     <section className='p-16 flex flex-col body-wrapper bg-background'>
-      {/* <p className='text-2xl text-center font-bold mt-20'>My cart</p> */}
       { !hasProducts && 
         <div className='mt-32 h-96 flex flex-col items-center justify-center bg-white  w-4/6 mx-auto rounded-lg'>
-          {/* <LiaCartPlusSolid className="text-2xl w-24 h-24 rounded-full bg-background text-gray-400 p-2 mb-8"/> */}
           <BsCartPlus className="text-gray-400 text-md w-24 h-24 bg-background rounded-lg p-4 mb-8"/>
           <p className="font-bold text-xl mb-4">Your cart is empty. </p> 
           <p className="">Find your style at <span className="text-brand">KIYOU! </span> </p>
-        </div>}
+        </div>
+      }
       { hasProducts && <>
         <ul className='border-b border-gray-300 mb-8 p-4 px-8 mt-10'>
           {products && products.map((product)=>{
@@ -41,7 +41,7 @@ export default function MyCart() {
           <FaEquals className='shrink-0'/>
           <PriceCard text="Total Price" price={SHIPPING + totalPrice}/>
         </div>
-        <button className="w-5/6 mt-5 mx-auto bg-brand text-white hover:brightness-110" onClick={()=>setIsOrdered(true)}>ORDER</button>
+        <button className="w-5/6 min-h-12 mt-5 mx-auto bg-brand text-white hover:brightness-110" onClick={()=>setIsOrdered(true)}>ORDER</button>
         {
           isOrdered && <Popup child={
             <div className='w-full  h-full flex flex-col justify-center items-center'>
@@ -56,7 +56,8 @@ export default function MyCart() {
           </div>
           }/>
         }
-      </>}
+        </>
+      }
     </section>
   );
 }

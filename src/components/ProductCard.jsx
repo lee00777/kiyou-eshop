@@ -1,13 +1,12 @@
-import React from 'react';
-import {useNavigate} from "react-router-dom"
+import { React, memo }  from 'react';
+import { useNavigate } from "react-router-dom"
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import colorMatch from '../utils/color';
 
-export default function ProductCard({product, product: {id, image, title, category, price, }}) {
+export default memo(function ProductCard({product, product: {id, image, title, category, price, }}) {
   const navigate = useNavigate();
-
   return (
-    <li key={id} onClick={()=>{navigate(`/products/${id}`, {state:{product}})}} className='rounded-lg h-fit shadow-md overflow-hidden cursor-pointer transition-all hover:scale-105'>
+    <li key={product.id} onClick={()=>{navigate(`/products/${id}`, {state:{product}})}} className='rounded-lg h-fit shadow-md overflow-hidden cursor-pointer transition-all hover:scale-105'>
       <img className="w-full" src={image.product[0]} alt={title}/>
         <div className='mt-2 px-2 text-lg flex justify-between items-center border-b border-gray-300 pb-2 '>
             <h3 className='truncate'>{title}</h3> {/* width를 넘어가면 ...으로 만들어버린다!! */}
@@ -26,10 +25,9 @@ export default function ProductCard({product, product: {id, image, title, catego
             <p className='mb-2 px-2 text-gray-600'>{category[0]}</p>
             <HiOutlineShoppingBag className='mr-2 text-2xl text-brand'/>
           </div>
-
         </div>
-
     </li>
   );
 }
+)
 

@@ -11,7 +11,7 @@ export default function NewArrivalProducts() {
   })
   return (
     <>
-      {isPending && <div className='flex justify-center mt-60'><RiLoaderLine className="animate-loading w-20 h-20 mt-10 text-brand" /></div>}
+      { isPending && <div className='flex justify-center mt-60'><RiLoaderLine className="animate-loading w-20 h-20 mt-10 text-brand" /></div>}
       { error && <p>{error}</p>}
       { !isPending && <h3 className='text-2xl mt-36 -mb-28 text-center'>NEW ARRIVALS 🌿</h3>}
       <ul className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-12 my-28 body-wrapper'>

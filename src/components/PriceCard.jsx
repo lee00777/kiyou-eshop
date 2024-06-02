@@ -1,6 +1,6 @@
-import React from 'react';
+import { React, memo } from 'react';
 
-export default function PriceCard({text, price}) {
+export default memo(function PriceCard({text, price}) {
   return (
     <div className='bg-gray-50 p-8 mx-2 my-4 md:my-0 rounded-2xl text-center text-lg md:text-xl'> 
       <p className="font-bold">{text}</p>
@@ -8,4 +8,4 @@ export default function PriceCard({text, price}) {
     </div>
   );
 }
-
+)

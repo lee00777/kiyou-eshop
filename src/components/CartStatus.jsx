@@ -1,11 +1,10 @@
 import React from 'react';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import useCart from '../hooks/useCart';
-import { RiLoaderLine } from "react-icons/ri";
 
 export default function CartStatus() {
   const { cartQuery: { data: products }} = useCart();
-
+  
   return (
     <div className='relative'>
       <AiOutlineShoppingCart className='text-4xl' />

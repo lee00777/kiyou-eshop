@@ -1,8 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import MyCart from "./pages/MyCart";
 import Home from "./pages/Home";
 import AllProducts from "./pages/AllProducts";
 import NewProduct from "./pages/NewProduct";
@@ -14,6 +13,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BestProducts from "./pages/BestProducts";
 import NewArrivalProducts from "./pages/NewArrivalProducts";
 import Sales from "./pages/Sales";
+const CartComponent = React.lazy(() => import("./pages/MyCart"));
 
 const router = createBrowserRouter([
     {
@@ -52,10 +52,11 @@ const router = createBrowserRouter([
                 path: "/carts",
                 element: (
                     <ProtectedRoute>
-                        <MyCart />
+                        <Suspense fallback={<div>Loading....</div>}>
+                            <CartComponent />
+                        </Suspense>
                     </ProtectedRoute>
                 ),
-                // errorElement: <NotFound />,
             },
             {
                 path: "/best",

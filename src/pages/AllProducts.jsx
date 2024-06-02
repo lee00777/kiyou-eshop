@@ -1,9 +1,10 @@
-import React from 'react';
+import { React, memo } from 'react';
 import Products from '../components/Products';
 
-export default function AllProducts({category}) {
+export default memo(function AllProducts({category}) {
   return (
-    <Products category={category}/>
-  );
-}
+      <Products category={category}/>
+    );
+  }
+)
 

@@ -16,9 +16,9 @@ export default function Trends() {
           From casual to elegant formal styles, we guarantee high quality at a reasonable price. <br />
         </p>
       </section>
-      <section className='mt-20 py-20 w-full bg-trend '>
+      <section className='mt-20 py-20 w-full z-0 bg-trend'>
         <Carousel 
-          className='w-5/6 flex mx-auto'
+          className='w-5/6 flex mx-auto z-10'
           swipeable={true}
           draggable={false}
           responsive={responsive}

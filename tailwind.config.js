@@ -11,7 +11,8 @@ module.exports = {
                 button: "#C7918A",
                 trendbtn: "#F5F1F0",
                 trendbtnfont: "#d19992",
-                background: "#F6F4EE"
+                background: "#F6F4EE",
+                clearBtn: "#2F7BEC",
             },
             animation: {
                 loading: "spin 3s linear infinite",

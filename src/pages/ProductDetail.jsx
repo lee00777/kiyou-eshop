@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useCart from '../hooks/useCart';
 import Popup from '../components/Popup';
+// import Carousel from '../components/UI/Carousel';
 import Carousel from 'react-multi-carousel';
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { useAuthContext } from '../contexts/AuthContext';
@@ -114,13 +115,12 @@ export default function ProductDetail() {
         <div className='w-full md:w-2/5 mr-3'>
           <div className='img-container relative'>
             <img className='w-full p-4 mx-auto rounded-md relative' onError={(ev)=>imgErrorHandling(ev)} src={displayedImage} alt="product pic"/>
-            {
-              !disableNextBtn && <GrNext className="absolute top-1/2 right-6 text-5xl p-2 text-white cursor-pointer w-12 h-12 hover:brightness-110 rounded-full bg-brand opacity-75" onClick={showNextImage}/>
-            }
-            {
-              !disablePreviousBtn && <GrPrevious className='absolute top-1/2 left-6 text-5xl p-2 text-white cursor-pointer w-12 h-12 hover:brightness-110 rounded-full bg-brand opacity-75' onClick={showPreviousImage}/>
-            }
+            {!disableNextBtn && <GrNext className="absolute top-1/2 right-6 text-5xl p-2 text-white cursor-pointer w-12 h-12 hover:brightness-110 rounded-full bg-brand opacity-75" onClick={showNextImage}/>}
+            {!disablePreviousBtn && <GrPrevious className='absolute top-1/2 left-6 text-5xl p-2 text-white cursor-pointer w-12 h-12 hover:brightness-110 rounded-full bg-brand opacity-75' onClick={showPreviousImage}/>}
           </div>
+          {/* <Carousel a={'flex m-4 border h-40'} child={image.product.map((item, idx)=>{
+            return <img className='m-2 pr-4 h-full object-contain my-auto cursor-pointer' key={idx} onError={(ev)=>imgErrorHandling(ev)} src={item} alt="extra pic" onClick={()=>handleExtraImage(idx)} />
+          })}/> */}
           <Carousel 
               className='flex m-4 border h-40'
               swipeable={true}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
+// import Carousel from './UI/Carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { bannerResponsive } from '../utils/slidersetting';
 

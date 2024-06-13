@@ -7,16 +7,14 @@ import Filter from './Filter';
 
 export default memo(function Products({category}) {
   const { productsQuery: { error, data:products}} = useProducts();
-  // 필터 관련 
-  const { filterQuery:{ isPending:filterIsPending, error:isFilterError, data : filters } } = useFilters(category); // 필터링 할 목록들 가져오기
+  const { filterQuery:{ isPending:filterIsPending, error:isFilterError, data : filters } } = useFilters(category); 
   const [ filteredProducts, setFilteredProducts ] = useState();
   const [ filteredItems, setFilteredItems ] = useState();
-
   const [ priceRangeSelected, setPriceRangeSelected ] = useState();
   const [ clickedFilter , setClickedFilter ] = useState('All');
   const [ priceFilter, setPriceFilter ] = useState({start:0, end:10000});
 
-  // product -> 품목별 filteredProducts -> 필터링 누르면 filteredItems사용
+  // product -> 품목별 filteredProducts -> 필터링별 filteredItems 사용
 
   useEffect(()=>{
     if(products){
@@ -25,7 +23,7 @@ export default memo(function Products({category}) {
         setFilteredProducts(products.filter(item=>item.category.includes(category)))
       }
       else{
-        // 맨처음 home page용
+        // initial home page용
         setFilteredProducts(products.filter(item =>item.trend.includes('Best')).slice(0,8))
       }
     }
@@ -68,71 +66,12 @@ export default memo(function Products({category}) {
     setPriceFilter({start:0, end:10000});
     setPriceRangeSelected(false);
     window.scrollTo({top:0 });
-    // setLastKey(1);
-    // setItems([]);
   },[category])
-
-  // const handleInfiniteScroll = useCallback(async () => {
-  //   try{
-  //     if(error){ throw new Error(error) }
-  //     if(products){
-  //         // 진정한 의미의 infinite scroll로 나중에 바꾸기 (지금은 데이터 가져와서 거기서 그냥 슬라이스 하는 것임)
-  //       let max = products.length /10;
-  //       let startKey ;
-  //       if(lastKey>max){
-  //         return;
-  //       }
-  //       if(lastKey === 1){
-  //         startKey = 0;
-  //       }else{
-  //         if(lastKey === 2){
-  //           startKey = 10;
-  //         }else if(lastKey === 3){
-  //           startKey=30;
-  //         }else if(lastKey === 4){
-  //           startKey=40;
-  //         }else if(lastKey===5){
-  //           startKey=50;
-  //         }
-  //       }
-  //       let slicedData  = products.slice( startKey , 10 * lastKey);
-
-  //       if(slicedData){
-  //         setItems(prev => [...prev, ...slicedData ]);
-  //         setLastKey(prev => prev+1)
-  //       }
-  //       console.log('어이어이:', lastKey, items)
-  //     }
-  //   }catch(err){
-  //     setFetchError(err);
-  //     console.error('Error fetching items:', err)
-  //   }
-  //   setIsLoading(false)
-  // },[error, products, lastKey, items])
-
-
-  // useEffect(()=>{
-  //   observerRef.current = new IntersectionObserver((entries) => {
-  //     const firstEntry = entries[0];
-  //     if (firstEntry.isIntersecting && !isLoading) {
-  //       handleInfiniteScroll();
-  //     }
-  //   }, { threshold: 0.3 });
-
-  //   observerRef.current.observe(document.getElementById('sentinel'))
-
-  //   return () => {
-  //     if (observerRef.current) {
-  //       observerRef.current.disconnect();
-  //     }
-  //   };
-  // },[lastKey, isLoading, handleInfiniteScroll])
 
   return (
     <>
       { !filterIsPending && <h3 className='text-2xl mt-40 text-center'>{category}</h3>}
       <div id="sentinel"  className='body-wrapper mx-auto flex flex-row justify-evenly px-4'>
-        {/* 필터링리스트  */}
         {category && category.length >=1 && 
           <div className='mt-4 text-left pl-8 md:pl-4'>
           { isFilterError && <p>{isFilterError}</p>}
@@ -152,9 +91,7 @@ export default memo(function Products({category}) {
           </div>
             <Filter priceRangeSelected={priceRangeSelected} handlePriceRangeFilter={handlePriceRangeFilter} clearPriceFilter={clearPriceFilter}/>
           </div>
-        }
-
-        {/*  제품 아이템들 보여주기 */}      
+        }   
         { error && <p>{error}</p>}
         <ul className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 p-16 h-auto w-4/5 '>
           { filteredItems && filteredItems.map(product => <ProductCard key={product.id} product={product}/>) }

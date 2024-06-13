@@ -9,9 +9,9 @@ import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 import reportWebVitals from "./reportWebVitals";
 import ProtectedRoute from "./pages/ProtectedRoute";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BestProducts from "./pages/BestProducts";
 import NewArrivalProducts from "./pages/NewArrivalProducts";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Sales from "./pages/Sales";
 const CartComponent = React.lazy(() => import("./pages/MyCart"));
 
@@ -32,7 +32,6 @@ const router = createBrowserRouter([
                 element: <AllProducts />,
                 errorElement: <NotFound />,
             },
-            // admin만 볼수있게 만들기 (url창에서 쳐도 못들어오게 하기)
             {
                 path: "/products/new",
                 element: (
@@ -47,7 +46,6 @@ const router = createBrowserRouter([
                 element: <ProductDetail />,
                 errorElement: <NotFound />,
             },
-            // 로그인 한사람만 볼수있게 만들기. 로그인하지 않았으면 Home으로 redirect하기
             {
                 path: "/carts",
                 element: (
@@ -109,7 +107,6 @@ const router = createBrowserRouter([
                 errorElement: <NotFound />,
             },
         ],
-        // errorElement: <NotFound />,
     },
 ]);
 

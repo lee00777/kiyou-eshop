@@ -48,6 +48,5 @@ export default memo(function CartItem({product, product: {id, image, title, opti
       </div>
     </li>
   );
-}
-)
+})
 

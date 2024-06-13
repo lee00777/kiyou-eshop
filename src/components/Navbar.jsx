@@ -44,10 +44,7 @@ export default function Navbar() {
             <Link to="/products/cardigans" className={LINKSTYLE}>CARDIGANS</Link>
             <Link to="/products/outers" className={LINKSTYLE}>OUTERS</Link>
             <Link to="/products/accessories" className={LINKSTYLE}>ACCESSORIES</Link>
-            {/* <Link to='/products'>Products</Link> */}
-            {user && <Link to='/carts' className="cursor-pointer">
-                <CartStatus />
-            </Link>}
+            {user && <Link to='/carts' className="cursor-pointer"><CartStatus /></Link>}
             {user && user.isAdmin && (
               <Link to='/products/new' className='text-2xl cursor-pointer'>
                 <BsFillPencilFill />

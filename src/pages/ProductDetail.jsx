@@ -35,7 +35,6 @@ export default function ProductDetail() {
     if(uid=== null){
       setNotLoggedIn(true);
     }else{
-      // 장바구니에 추가하기
       const product ={
         id, image, title, price, description, option: {selectedSize, selectedColor}, quantity:1,
         original:{id, image,title,description, size, trend, colors, category, price}

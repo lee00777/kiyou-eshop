@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -34,7 +33,4 @@ input{
 
 .popup{
   z-index:999;
-}
-.test{
-  z-index:-9999;
 }

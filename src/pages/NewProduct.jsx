@@ -5,18 +5,18 @@ import Popup from '../components/Popup';
 import { useCallback } from 'react';
 
 export default function NewProduct() {
-  const [ product, setProduct ] = useState({});             // 사용자 input을 받아와서 database에 저장하기 위해 임시로 사용되는 변수
-  const [ file, setFile ] = useState();                     // 사용자 input 중 file이미지를 받아와서 database에 저장하기 위해 임시로 사용되는 변수 (product에 별도로 하는 이유는, 파일은 cloudinary라는 db에 저장하고 그걸 firebase에 다시 넣기 위함임)
-  const [ optionFile, setOptionFile ] = useState();         // 사용자 input 중 file이미지를 받아와서 database에 저장하기 위해 임시로 사용되는 변수 (product에 별도로 하는 이유는, 파일은 cloudinary라는 db에 저장하고 그걸 firebase에 다시 넣기 위함임)
-  const [ isUploading, setIsUploading ] = useState(false);  // better UX위해, 현재 업로드 중이라는거 알려주는 용도
-  const [ success, setSuccess ] = useState(false);          // better UX위해, 성공적으로 업로드 되었다는거 알려주는 용도
+  const [ product, setProduct ] = useState({});             
+  const [ file, setFile ] = useState();                     
+  const [ optionFile, setOptionFile ] = useState();        
+  const [ isUploading, setIsUploading ] = useState(false);  
+  const [ success, setSuccess ] = useState(false);          
 
   const { addProduct } = useProducts(); 
 
   const handleChange = useCallback((ev)=>{
     const { name, value, files } = ev.target;
     if(name === "file"){
-      setFile(files && [...files]); // if(files){setFile(files[0])}의 의미임
+      setFile(files && [...files]); 
       return;
     }
     if(name === "optionFile"){
@@ -57,7 +57,7 @@ export default function NewProduct() {
       setProduct({})
       setFile();
       setOptionFile();
-      removeFileImage();       // 파일은 value attribute이 불가능하므로, js에 불러와서 value를 clear해줘야함
+      removeFileImage();      
       setIsUploading(false)
     }catch(err){
       console.error('Error happened:', err)

@@ -9,7 +9,7 @@ export default function useProducts(){
     queryFn: () => {
       return fetchProducts()
     },
-    staleTime:1000*60*5 ,// 5분임. 5초는 5000,
+    staleTime:1000*60*5,
     refetchOnMount:false
   })
 

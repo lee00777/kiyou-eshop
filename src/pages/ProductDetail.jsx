@@ -116,7 +116,7 @@ export default function ProductDetail() {
           {!disableNextBtn && <GrNext className="absolute top-1/2 right-6 text-5xl p-2 text-white cursor-pointer w-12 h-12 hover:brightness-110 rounded-full bg-brand opacity-75" onClick={showNextImage}/>}
           {!disablePreviousBtn && <GrPrevious className='absolute top-1/2 left-6 text-5xl p-2 text-white cursor-pointer w-12 h-12 hover:brightness-110 rounded-full bg-brand opacity-75' onClick={showPreviousImage}/>}
         </div>
-        <Slider cssStyle={'flex m-4 border h-40'} responsiveStyle={responsive} displayDots={true}>
+        <Slider cssStyle={'flex m-4 border h-40 z-0'} responsiveStyle={responsive} displayDots={true}>
             {image.product.map((item, idx)=>{
                 return <img className='m-2 pr-4 h-full object-contain my-auto cursor-pointer' key={idx} onError={(ev)=>imgErrorHandling(ev)} src={item} alt="extra pic" onClick={()=>handleExtraImage(idx)} />
             })}

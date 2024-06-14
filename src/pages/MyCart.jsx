@@ -49,7 +49,6 @@ export default function MyCart() {
                 <p className='mb-2'>Thank you for your order.</p>
                 <span className='font-bold border-b-8 border-[#ffe7e2]'>Your order </span>will be shipped soon!
               </p>
-      
             <div className='w-5/6 mt-16 text-center'>
               <button className='w-full sm:w-auto h-auto p-3 rounded-lg border border-gray-400 text-gray hover:brightness-110' onClick={()=>setIsOrdered(false)}>Close</button> 
             </div>

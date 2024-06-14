@@ -12,7 +12,7 @@ export default function Slider({cssStyle, children, responsiveStyle, displayDots
       showDots={displayDots}
       responsive={responsiveStyle}
       arrows
-      ssr={true} // means to render carousel on server-side.
+      ssr={true}
       infinite={true}
       autoPlay={true}
       autoPlaySpeed={4000}

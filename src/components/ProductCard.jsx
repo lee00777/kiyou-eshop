@@ -22,8 +22,8 @@ export default memo(function ProductCard({product, product: {id, image, title, c
             {product.colors.map(color=>colorMatch(color))}
           </div>
           <div className='flex justify-between'>
-            <p className='mb-2 px-2 text-gray-600'>{category[0]}</p>
-            <HiOutlineShoppingBag className='mr-2 text-2xl text-brand'/>
+            <p className='pt-2 mb-2 px-2 text-gray-600'>{category[0]}</p>
+            <HiOutlineShoppingBag className='mr-2 text-2xl text-brand hover:scale-110 mx-auto '/>
           </div>
         </div>
     </li>

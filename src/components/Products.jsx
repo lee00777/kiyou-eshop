@@ -95,7 +95,7 @@ export default memo(function Products({category}) {
         { error && <p>{error}</p>}
         <ul className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 p-16 h-auto w-4/5 '>
           { filteredItems && filteredItems.map(product => <ProductCard key={product.id} product={product}/>) }
-          { filteredItems && filteredItems.length === 0 && <p className='text-sm max-w-full col-start-1 col-span-3 md:col-start-1 md:col-span-4 mt-20 md:-ml-10 text-center w-100 md:text-lg text-description'> <span className="mr-2">🚫</span> No items match the selected filter </p> }
+          { filteredItems && filteredItems.length === 0 && <p className='text-sm max-w-full col-start-1 col-span-3 md:col-start-1 md:col-span-4 mt-20 md:-ml-20 text-center w-100 md:text-lg text-description'> <span className="mr-2">🚫</span> No items match the selected filter </p> }
         </ul>
       </div>
     </>

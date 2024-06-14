@@ -1,7 +1,6 @@
 import React from 'react';
 import TrendCard from './TrendCard';
-// import Carousel from './UI/Carousel';
-import Carousel from 'react-multi-carousel';
+import Slider from './UI/Slider';
 import 'react-multi-carousel/lib/styles.css';
 import { responsive } from '../utils/slidersetting';
 import { trends } from '../api/trends';
@@ -18,25 +17,11 @@ export default function Trends() {
         </p>
       </section>
       <section className='mt-20 py-20 w-full z-0 bg-trend'>
-        {/* <Carousel a={'w-5/6 flex mx-auto z-10'} child={trends.map((item)=>{return <TrendCard key={item.id} image={item.image} trends={item.trends} description={item.description}/>})}/> */}
-        <Carousel 
-          className='w-5/6 flex mx-auto z-10'
-          swipeable={true}
-          draggable={false}
-          responsive={responsive}
-          arrows
-          infinite
-          autoPlay={true}
-          customTransition="all 0.5s linear"
-          transitionDuration={500}
-          rewind={false}
-          rewindWithAnimation={false}
-          rtl={false}
-          shouldResetAutoplay>
+        <Slider cssStyle={'w-5/6 flex mx-auto z-10'} responsiveStyle={responsive} displayDots={false}>
           {trends.map((item)=>{
               return <TrendCard key={item.id} image={item.image} trends={item.trends} description={item.description}/>
             })}
-        </Carousel>
+        </Slider>
       </section>
     </div>
   );

@@ -27,13 +27,14 @@
 - Context API 사용: 로그인 상태 체크 제외하고는 전역 상태로 관리할 변수가 많지 않고 복잡하지 않아, 별도의 상태 관리 라이브러리 대신 Context API를 사용. Context API는 적절한 전역 상태 관리를 가능하게 하며, 프로젝트의 복잡성을 줄여줌
 
 ## 스크린샷 및 동영상
-<video src="./public/readme_resources/사용자뷰.mp4" width="70vw"  >
-<img src="./public/readme_resources/랜딩페이지.png" alt="landing page" width="70vw"/>
-<img src="./public/readme_resources/제품뷰" alt="product page"/>
-<img src="./public/readme_resources/상세뷰.png" alt="product detail page"/>
-<img src="./public/readme_resources/로그인요청.png" alt="login request"/>
-<img src="./public/readme_resources/카트성공메세지.png" alt="cart added message"/>
-<img src="./public/readme_resources/카트.png" alt="cart page"/>
-<img src="./public/readme_resources/관리자_제품등록화면.png" alt="admin product registration page"/>
-<img src="./public/readme_resources/등록성공메세지.png" alt="product registration success message"/>
-<img src="./public/readme_resources/제품등록_성공.png" alt="registered product page"/>
+
+![사용자뷰](./public/readme_resources/사용자뷰.mp4)
+![랜딩페이지](./public/readme_resources/랜딩페이지.png)
+![제품뷰](./public/readme_resources/제품뷰.png)
+![상세뷰](./public/readme_resources/상세뷰.png)
+![로그인요청](./public/readme_resources/로그인요청.png)
+![카트성공메세지](./public/readme_resources/카트성공메세지.png)
+![카트](./public/readme_resources/카트.png)
+![관리자_제품등록화면](./public/readme_resources/관리자_제품등록화면.png)
+![등록성공메세지](./public/readme_resources/등록성공메세지.png)
+![제품등록_성공](./public/readme_resources/제품등록_성공.png)

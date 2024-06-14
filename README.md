@@ -27,6 +27,7 @@
 - Context API 사용: 로그인 상태 체크 제외하고는 전역 상태로 관리할 변수가 많지 않고 복잡하지 않아, 별도의 상태 관리 라이브러리 대신 Context API를 사용. Context API는 적절한 전역 상태 관리를 가능하게 하며, 프로젝트의 복잡성을 줄여줌
 
 ## 스크린샷 및 동영상
+https://github.com/lee00777/kiyou-eshop/assets/72294886/c8c2a616-a6a1-4e68-9f0b-974199ad46d1
 
 1. 랜딩페이지
 ![랜딩페이지](./public/readme_resources/랜딩페이지.png)

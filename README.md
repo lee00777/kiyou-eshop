@@ -28,9 +28,6 @@
 
 ## 스크린샷 및 동영상
 
-![사용자뷰](./public/readme_resources/사용자뷰.gif)
-<img src="./public/readme_resources/사용자뷰.gif" alt="사용자뷰" width="70vw" height="auto"/>
-
 1. 랜딩페이지
 ![랜딩페이지](./public/readme_resources/랜딩페이지.png)
 2. 카테고리별 제품뷰

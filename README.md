@@ -28,13 +28,22 @@
 
 ## 스크린샷 및 동영상
 
-![사용자뷰](./public/readme_resources/사용자뷰.mp4)
+![사용자뷰](./public/readme_resources/사용자뷰.gif)
+<img src="./public/readme_resources/사용자뷰.gif" alt="사용자뷰" width="70vw" height="auto"/>
+
+1. 랜딩페이지
 ![랜딩페이지](./public/readme_resources/랜딩페이지.png)
+2. 카테고리별 제품뷰
 ![제품뷰](./public/readme_resources/제품뷰.png)
+3. 제품 상세뷰
 ![상세뷰](./public/readme_resources/상세뷰.png)
+4. 로그인 요청 메세지
 ![로그인요청](./public/readme_resources/로그인요청.png)
+5. 로그인 후, 카트 성공 메세지
 ![카트성공메세지](./public/readme_resources/카트성공메세지.png)
+6. 카트뷰
 ![카트](./public/readme_resources/카트.png)
+7. 관리자 제품 등록 화면
 ![관리자_제품등록화면](./public/readme_resources/관리자_제품등록화면.png)
-![등록성공메세지](./public/readme_resources/등록성공메세지.png)
+8. 등록된 제품
 ![제품등록_성공](./public/readme_resources/제품등록_성공.png)

@@ -9,7 +9,7 @@ export default function ProtectedRoute({ children, requiredAdmin }) {
   if (loading) {
     return <div>Loading...</div>;
   }
-  console.log('어이어이:',user)
+  console.log('USER:',user)
   if (!user || (requiredAdmin && !user.isAdmin)) {
     alert('You have no access to the page. Redirecting to the home page.');
     navigate('/');

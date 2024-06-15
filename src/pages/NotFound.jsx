@@ -8,7 +8,7 @@ export default function NotFound() {
   useEffect(()=>{
     setInterval(()=>{
       navigate(`/`)
-    }, 7000)
+    }, 3000)
   },[navigate])
   
   return (

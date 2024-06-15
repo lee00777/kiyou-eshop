@@ -1,8 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { useAuthContext } from '../contexts/AuthContext';
 import { responsive } from '../utils/slidersetting';
+import useProducts from '../hooks/useProducts';
 import useCart from '../hooks/useCart';
 import Popup from '../components/Popup';
 import Slider from '../components/UI/Slider';
@@ -10,13 +11,32 @@ import Option from '../components/Option';
 import Size from '../components/Size';
 
 export default function ProductDetail() {
-  const { uid  } = useAuthContext();
-  const { login } = useAuthContext();
-  const { addOrUpdateItem } = useCart();
+  const { productsQuery: { isPending, data:products}} = useProducts();
+
+  const { id } = useParams();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!isPending && products) {
+      if (!products.map(item => item.id).includes(id)) {
+        navigate("/not-found");
+      }
+    }
+  }, [isPending, products, id, navigate]);
+
+
   const {state:{
-    product:{id, image,title,description, size, trend, colors, category, price}
-  }} = useLocation();
+    product:{ image,title,description, size, trend, colors, category, price},
+  },} = useLocation();
+
+
+
+
+
+  const { uid, login } = useAuthContext();
+  const { addOrUpdateItem } = useCart();
+
+
 
   // 옵션 항목들
   const [ selectedSize, setSelectedSize ] = useState(size && size[0]);

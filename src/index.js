@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -11,9 +11,9 @@ import reportWebVitals from "./reportWebVitals";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import BestProducts from "./pages/BestProducts";
 import NewArrivalProducts from "./pages/NewArrivalProducts";
+import MyCart from "./pages/MyCart";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Sales from "./pages/Sales";
-const CartComponent = React.lazy(() => import("./pages/MyCart"));
 
 const router = createBrowserRouter([
     {
@@ -25,6 +25,29 @@ const router = createBrowserRouter([
                 index: true,
                 path: "/",
                 element: <Home />,
+                errorElement: <NotFound />,
+            },
+            {
+                path: "/carts",
+                element: (
+                    <ProtectedRoute requiredAdmin={false}>
+                        <MyCart />
+                    </ProtectedRoute>
+                ),
+            },
+            {
+                path: "/best",
+                element: <BestProducts />,
+                errorElement: <NotFound />,
+            },
+            {
+                path: "/new",
+                element: <NewArrivalProducts />,
+                errorElement: <NotFound />,
+            },
+            {
+                path: "/sales",
+                element: <Sales />,
                 errorElement: <NotFound />,
             },
             {
@@ -44,31 +67,6 @@ const router = createBrowserRouter([
             {
                 path: "/products/:id",
                 element: <ProductDetail />,
-                errorElement: <NotFound />,
-            },
-            {
-                path: "/carts",
-                element: (
-                    <ProtectedRoute>
-                        <Suspense fallback={<div>Loading....</div>}>
-                            <CartComponent />
-                        </Suspense>
-                    </ProtectedRoute>
-                ),
-            },
-            {
-                path: "/best",
-                element: <BestProducts />,
-                errorElement: <NotFound />,
-            },
-            {
-                path: "/new",
-                element: <NewArrivalProducts />,
-                errorElement: <NotFound />,
-            },
-            {
-                path: "/sales",
-                element: <Sales />,
                 errorElement: <NotFound />,
             },
             {
@@ -105,6 +103,10 @@ const router = createBrowserRouter([
                 path: "/products/accessories",
                 element: <AllProducts category={"Accessory"} />,
                 errorElement: <NotFound />,
+            },
+            {
+                path: "/products/*",
+                element: <NotFound />,
             },
         ],
     },

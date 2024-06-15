@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import colorMatch from '../utils/color';
 
-export default memo(function ProductCard({product, product: {id, image, title, category, price, }}) {
+export default memo(function ProductCard({ product, product: {id, image, title, category, price }}) {
   const navigate = useNavigate();
   return (
     <li onClick={()=>{navigate(`/products/${id}`, {state:{product}})}} key={id} className='rounded-lg h-fit shadow-md overflow-hidden cursor-pointer transition-all hover:scale-105'>

@@ -106,7 +106,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/products/*",
-                element: <NotFound />,
+                errorElement: <NotFound />,
             },
         ],
     },

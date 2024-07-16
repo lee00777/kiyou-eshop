@@ -24,19 +24,12 @@ export default function ProductDetail() {
     }
   }, [isPending, products, id, navigate]);
 
-
   const {state:{
     product:{ image,title,description, size, trend, colors, category, price},
   },} = useLocation();
 
-
-
-
-
   const { uid, login } = useAuthContext();
   const { addOrUpdateItem } = useCart();
-
-
 
   // 옵션 항목들
   const [ selectedSize, setSelectedSize ] = useState(size && size[0]);

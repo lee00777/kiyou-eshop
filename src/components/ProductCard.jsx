@@ -6,7 +6,7 @@ import colorMatch from '../utils/color';
 export default memo(function ProductCard({ product, product: {id, image, title, category, price }}) {
   const navigate = useNavigate();
   return (
-    <li onClick={()=>{navigate(`/products/${id}`, {state:{product}})}} key={id} className='rounded-lg h-fit shadow-md overflow-hidden cursor-pointer transition-all hover:scale-105'>
+    <li onClick={()=>{navigate(`/products/${id}`, {state:{product}})}} key={id} className='rounded-lg h-fit shadow-md overflow-hidden cursor-pointer transition-all hover:scale-105 product-card'>
       <img className="w-full" src={image.product[0]} alt={title}/>
         <div className='mt-2 px-2 text-lg flex justify-between items-center border-b border-gray-300 pb-2 '>
             <h3 className='truncate'>{title}</h3>
@@ -26,6 +26,7 @@ export default memo(function ProductCard({ product, product: {id, image, title, 
             <HiOutlineShoppingBag className='mr-2 text-2xl text-brand hover:scale-110 mx-auto '/>
           </div>
         </div>
+        <div className="quick-view-button">QUICK VIEW</div>
     </li>
   );
 }

@@ -10,5 +10,14 @@ export default memo(function Popup({child}) {
     </div>
     );
   }
+  // return (
+  //   <div className="popup-overlay" >
+  //     <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+  //       {child}
+  
+  //     </div>
+  //   </div>
+  // );
+// }
 )
 
